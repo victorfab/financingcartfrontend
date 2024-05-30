@@ -1,0 +1,27 @@
+.switch {
+    margin: 1em 1em;
+}
+.input-box {
+    text-align: center;
+    background-color: #fff;
+    padding: 1em 0;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #595959;
+    position: relative;
+    border-radius: 50px;
+}
+.switch-btn {
+    background-color: #ed0000;
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    padding: 0.6em 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: left 2s;
+}
+.slide {
+    left: 81% !important;
+}

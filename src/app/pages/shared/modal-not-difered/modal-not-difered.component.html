@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="imagen">
+    <img src="/assets/images/gray_icon.png" alt="gray_icon">
+  </div>
+  <div class="title">Pago no diferido</div>
+  <div class="message" *ngIf="purchases.length  <= 1">Tu compra en {{ message }} por la cantidad de {{ getAmount() | currency: 'USD' }} no pudo ser diferida. Por favor, inténtalo más tarde.</div>
+  <div class="message" *ngIf="purchases.length > 1">Tus compras en {{message}} por la cantidad de {{ getAmount() | currency: 'USD' }} no pudo ser diferida. Por favor, inténtalo más tarde.</div>
+  <div class="btn-container">
+    <button flameButton color="primary" (click)="close()">Entendido</button>
+  </div>
+</div>

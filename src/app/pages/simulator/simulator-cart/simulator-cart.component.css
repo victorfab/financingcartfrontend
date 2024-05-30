@@ -1,0 +1,176 @@
+.simulator-cart-content {
+    padding: 0 1em;
+}
+.simulator-cart-box {
+    background-color: #fff;
+    padding: 1em 1em;
+    border-radius: 16px 16px;
+    position: relative;
+    margin-bottom: 1em;
+}
+.simulator-cart-box-title h3 {
+    margin: 0;
+    padding-bottom: 0.4em;
+    font-family: 'Santander Headline', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+.simulator-cart-box-title h3::first-letter {
+    text-transform:capitalize;
+}
+.simulator-cart-box-para p {
+    font-family: 'Santander Headline', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+.simulator-cart-box-para p span {
+    font-weight: 700;
+}
+.simulator-cart-box-month p {
+    margin-bottom: 1.6em;
+}
+.simulator-cart-box-month p span {
+    font-family: 'Santander Micro Text', Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    display: block;
+}
+.simulator-cart-box-info p {
+    font-family: 'Santander Micro Text', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+.simulator-cart-box-info p span {
+    font-weight: 700;
+}
+.simulator-cart-box-delete {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 24px;
+    height: 24px;
+    background-image: url('/assets/images/delete-icon.svg');
+    background-repeat: no-repeat;
+}
+.simulator-cart-list {
+    margin: 0.5em 0 1.6em 0;
+}
+.simulator-cart-summary {
+    position: relative;
+}
+.simulator-cart-count {
+    color: #191919;
+    font-size: 16px;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+}
+.simulator-cart-legend {
+    color: #595959;
+    font-size: 10px;
+    font-family: 'Santander Micro Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.simulator-cart-details {
+    color: #ec0000;
+    font-size: 16px;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.simulator-cart-payment {
+    background-color: #fff;
+    border-bottom: 1px solid #f2f2f2;
+    position: relative;
+    padding: 0.5em 0.9em;
+}
+.simulator-cart-payment:first-child {
+    border-radius: 12px 12px 0 0;
+}
+.simulator-cart-payment:last-child {
+    border-radius: 0 0 12px 12px;
+    border-bottom: none;
+}
+.simulator-cart-payment:only-child {
+  border-radius: 12px;
+}
+.simulator-cart-payment-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 46px;
+}
+.simulator-cart-payment-radio {
+    width: 22px;
+    height: 22px;
+    background-color: #d2e7d4;
+    border: 1px solid #63b468;
+    border-radius: 15px 15px;
+    background-image: none;
+    margin: 0 1em 0 0;
+}
+.simulator-cart-payment-radio-active {
+    background-color: #63b468;
+    background-image: url('../../../../assets/images/check-icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.simulator-cart-payment-month {
+    text-align: right;
+}
+.simulator-cart-payment-month p {
+    margin: 0.3em 0;
+}
+.payment-month {
+    color: #595959;
+    font-size: 10px;
+    font-family: 'Santander Micro Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.payment-amount {
+    color: #191919;
+    font-size: 14px;
+    font-family: 'SantanderMicroText', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.70px;
+}
+.simulator-cart-payment-more {
+    display: flex;
+}
+.simulator-cart-payment-box {
+    width: 50%;
+    padding-top: 0.5em;
+}
+.simulator-cart-payment-box p {
+    margin: 0;
+}
+.simulator-cart-payment-box:first-child {
+    padding-left: 2.5em;
+}
+.simulator-cart-payment-box:last-child {
+    text-align: right;
+}
+.payment {
+    color: #595959;
+    font-size: 10px;
+    font-family: 'Santander Micro Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.payment-quantity {
+    color: #191919;
+    font-size: 10px;
+    font-family: 'Santander Micro Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.simulator-cart-payment-title {
+    color: #191919;
+    font-size: 14px;
+    font-family: 'SantanderText', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}

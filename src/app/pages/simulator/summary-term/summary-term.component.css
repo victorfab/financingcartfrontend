@@ -1,0 +1,33 @@
+.terms {
+    margin: 2em 1em;
+}
+.form {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+}
+.terms-link {
+    padding-left: 0.5em;
+}
+.terms-link span a {
+    color: #191919;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 700;
+}
+.radio-btn {
+    width: 22px;
+    height: 22px;
+    background-color: #d2e7d4;
+    border: 1px solid #63b468;
+    border-radius: 15px 15px;
+    background-image: none;
+}
+.radio-active {
+    background-color: #63b468;
+    background-image: url('../../../../assets/images/check-icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #63b468;
+}

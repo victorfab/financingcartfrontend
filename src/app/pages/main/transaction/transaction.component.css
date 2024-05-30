@@ -1,0 +1,71 @@
+.wrapper-transaction {
+    position: relative;
+    margin: 1.8em 1em;
+}
+.wrapper-transaction-title h2 {
+    font-family: 'Santander Headline', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+    padding: 0.25em 0;
+}
+.filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ec0000;
+    padding: 0.5em 0;
+    border-radius: 12px;
+    width: 75px;
+    text-align: center;
+}
+.wrapper-transaction-latest-title h3 {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.wrapper-transaction-latest-item:first-child {
+    border-radius: 12px 12px 0 0;
+}
+.wrapper-transaction-latest-item {
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 1.2em 1em;
+    position: relative;
+}
+.wrapper-transaction-latest-item:last-child {
+    border-bottom: none;
+    border-radius: 0 0 12px 12px;
+}
+.transaction-image {
+    background-color: #f2f2f2;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border-radius: 50px;
+    margin-right: 0.8em;
+}
+.transaction-title {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.transaction-quantity {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding-right: 1em;
+    display: flex;
+    height: 79px;
+    align-items: center;
+}

@@ -1,0 +1,75 @@
+.modal {
+    background-color: #fff;
+    border-radius: 12px 12px 0 0;
+    padding: 1em 1.5em;
+    position: absolute;
+    top: 2px;
+}
+.modal-after {
+    border-radius: 12px 12px !important;
+    height: 115vh;
+}
+.modal-title {
+    position: relative;
+}
+.modal-title h3 {
+    font-family: 'Santander Headline', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+.modal-info p {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+.modal-info p:last-child {
+    margin-bottom: 175px;
+}
+.modal-info-after p:last-child {
+    margin-bottom: 0 !important;
+}
+.modal-terms {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 21.43%);
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    padding: 1em 1.5em;
+}
+.modal-form p {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+.modal-form p span {
+    font-weight: 700;
+    display: inline-block;
+}
+.modal-form p a {
+    width: 140px;
+    color: #fff;
+    background-color: #EC0000;
+    border: none;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 1em 0;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.close {
+    cursor: pointer;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ec0000;
+    position: absolute;
+    top: 3px;
+    right: 0;
+}

@@ -1,0 +1,26 @@
+.wrapper-box {
+    position: relative;
+    margin: 1em 1em;
+}
+.wrapper-title h1 {
+    font-family: 'Santander Headline', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.wrapper-actions {
+    position: absolute;
+    top: 0;
+    right:0;
+}
+.wrapper-menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.wrapper-menu li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 34px;
+    padding: 0 1em;
+}

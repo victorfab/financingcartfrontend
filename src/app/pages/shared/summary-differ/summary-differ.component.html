@@ -1,0 +1,9 @@
+<div class="summary-title">
+    <h3>{{ title }}</h3>
+</div>
+<div class="summary-box">
+    <div class="summary-row" *ngFor="let row of data">
+        <div class="summary-head">{{ row.title }}</div>
+        <div class="summary-data">{{ row.value }}</div>
+    </div>
+</div>

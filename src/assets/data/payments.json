@@ -1,0 +1,132 @@
+[
+    {
+        "id": 205,
+        "siaidcd": "53464960634356789032",
+        "nomCom": "Chedraui",
+        "buc": "1234567899996",
+        "montoCompra": 30000,
+        "fechaCompra": "2023-08-10T06:00:00.000+00:00",
+        "fechaCorte": "2023-09-10T06:00:00.000+00:00",
+        "fechaModificacion": "2023-08-31T21:13:27.000+00:00",
+        "disponibilidad": 1,
+        "terminacionTarjeta": "7324",
+        "numContrato": "79909912",
+        "codCom": "4446001",
+        "codEst": "642",
+        "ofertas": [
+            {
+                "id": 726,
+                "tipo": "MCI",
+                "condicion": 1,
+                "interesMensual": "0.015",
+                "noMeses": "6",
+                "totalPago": "30450.0"
+            },
+            {
+                "id": 727,
+                "tipo": "MCI",
+                "condicion": 1,
+                "interesMensual": "0.015",
+                "noMeses": "3",
+                "totalPago": "30450.0"
+            },
+            {
+                "id": 728,
+                "tipo": "MCI",
+                "condicion": 1,
+                "interesMensual": "0.015",
+                "noMeses": "9",
+                "totalPago": "30450.0"
+            },
+            {
+                "id": 729,
+                "tipo": "MCI",
+                "condicion": 1,
+                "interesMensual": "0.015",
+                "noMeses": "12",
+                "totalPago": "30450.0"
+            },
+            {
+                "id": 730,
+                "tipo": "MCI",
+                "condicion": 1,
+                "interesMensual": "0.015",
+                "noMeses": "18",
+                "totalPago": "30450.0"
+            },
+            {
+                "id": 731,
+                "tipo": "MCI",
+                "condicion": 1,
+                "interesMensual": "0.015",
+                "noMeses": "24",
+                "totalPago": "30450.0"
+            }
+        ]
+    },
+    {
+        "id": 207,
+        "siaidcd": "53464960634356789032",
+        "nomCom": "TIENDAS DE REPARACION DE ELECT",
+        "buc": "1234567899996",
+        "montoCompra": 10000,
+        "fechaCompra": "2023-08-20T06:00:00.000+00:00",
+        "fechaCorte": "2023-09-20T06:00:00.000+00:00",
+        "fechaModificacion": "2023-08-31T21:15:54.000+00:00",
+        "disponibilidad": 1,
+        "terminacionTarjeta": "7324",
+        "numContrato": "79909912",
+        "codCom": "4446001",
+        "codEst": "642",
+        "ofertas": [
+            {
+                "id": 740,
+                "tipo": "MCI",
+                "condicion": 1,
+                "interesMensual": "0.023",
+                "noMeses": "3",
+                "totalPago": "10230.0"
+            },
+            {
+                "id": 741,
+                "tipo": "MCI",
+                "condicion": 1,
+                "interesMensual": "0.0227",
+                "noMeses": "12",
+                "totalPago": "10227.0"
+            },
+            {
+                "id": 742,
+                "tipo": "MCI",
+                "condicion": 1,
+                "interesMensual": "0.0227",
+                "noMeses": "18",
+                "totalPago": "10227.0"
+            },
+            {
+                "id": 743,
+                "tipo": "MCI",
+                "condicion": 1,
+                "interesMensual": "0.015",
+                "noMeses": "24",
+                "totalPago": "10150.0"
+            },
+            {
+                "id": 745,
+                "tipo": "MCI",
+                "condicion": 1,
+                "interesMensual": "0.015",
+                "noMeses": "6",
+                "totalPago": "10150.0"
+            },
+            {
+                "id": 746,
+                "tipo": "MCI",
+                "condicion": 1,
+                "interesMensual": "0.015",
+                "noMeses": "9",
+                "totalPago": "10150.0"
+            }
+        ]
+    }
+]

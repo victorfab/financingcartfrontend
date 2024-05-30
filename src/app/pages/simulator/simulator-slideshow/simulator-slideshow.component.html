@@ -1,0 +1,30 @@
+<div class="wrapper-slideshow">
+    <div class="wrapper-slideshow-title">
+        <h3>Elige el plazo a <span>meses con</span> intereses</h3>
+    </div>
+    <div class="wrapper-slideshow-content">
+        <!--<div class="wrapper-slideshow-slider test" *ngIf="monthsWith.length > 0" [class.mb]="monthsWith.length > 2">
+            <div class="wrapper-slideshow-box test" *ngFor="let row of monthsWith" (click)="monthBox.emit([row, 0])">
+                <div class="wrapper-slideshow-box-content test" [class.selected-box-content]="month == row">
+                    <div class="wrapper-slideshow-month test">{{ row }}</div>
+                    <div class="wrapper-slideshow-text test">Meses con intereses</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-slideshow-slider" *ngIf="monthsWithout.length > 0" [class.mb]="monthsWithout.length > 2">
+            <div class="wrapper-slideshow-box" *ngFor="let row of monthsWithout" (click)="monthBox.emit([row, 0])">
+                <div class="wrapper-slideshow-box-content" [class.selected-box-content]="month == row">
+                    <div class="wrapper-slideshow-month">{{ row }}</div>
+                    <div class="wrapper-slideshow-text">Meses sin intereses</div>
+                </div>
+            </div>
+        </div>-->
+        <div class="wrapper-slideshow-slider" *ngIf="monthsWith.length > 0">
+            <div class="wrapper-slideshow-box" [class.selected-box]="month == row" *ngFor="let row of monthsWith" (click)="monthBox.emit([row, 0])">
+                <div class="wrapper-slideshow-box-content" [class.selected-box-content]="month == row">
+                    <div class="wrapper-slideshow-month">{{ row }} Meses</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

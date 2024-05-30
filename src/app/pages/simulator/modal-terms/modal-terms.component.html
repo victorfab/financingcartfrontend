@@ -1,0 +1,18 @@
+<!--<div class="modal" *ngIf="flag" [class.modal-after]="!flagModalChild" [class.modal-info-after]="!flagModalChild">-->
+<div class="modal" *ngIf="flag" [class.modal-after]="!flagModalChild" [class.modal-info-after]="!flagModalChild">
+    <div class="modal-scroll">
+        <div class="modal-title">
+            <h3>Términos y Condiciones</h3>
+            <p><a class="close" (click)="modal.emit(false)">Cerrar</a></p>
+        </div>
+        <div class="modal-info">
+            <p>{{ modalTerms }}</p>
+        </div>
+        <!--<div class="modal-terms" *ngIf="flagModalChild">
+            <div class="modal-form">
+                <p>Acepto que he leído y conozco<br><span>los Términos y Condiciones</span> del producto.</p>
+                <p><a (click)="modalBtn.emit(false)">Aceptar</a></p>
+            </div>
+        </div>-->
+    </div>
+</div>

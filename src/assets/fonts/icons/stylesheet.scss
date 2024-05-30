@@ -1,0 +1,2960 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$flame-font-family}';
+  src:  url('#{$flame-font-path}/#{$flame-font-family}.woff2?qqdy1r') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i[class^="sn-"]{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$flame-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: var(--sn-color__onix, #000000);
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sn-BAN001 {
+  &:before {
+    content: $sn-BAN001;
+  }
+}
+.sn-BAN001B {
+  &:before {
+    content: $sn-BAN001B;
+  }
+}
+.sn-BAN001C {
+  &:before {
+    content: $sn-BAN001C;
+  }
+}
+.sn-BAN002 {
+  &:before {
+    content: $sn-BAN002;
+  }
+}
+.sn-BAN002B {
+  &:before {
+    content: $sn-BAN002B;
+  }
+}
+.sn-BAN002C {
+  &:before {
+    content: $sn-BAN002C;
+  }
+}
+.sn-BAN003 {
+  &:before {
+    content: $sn-BAN003;
+  }
+}
+.sn-BAN004 {
+  &:before {
+    content: $sn-BAN004;
+  }
+}
+.sn-BAN004B {
+  &:before {
+    content: $sn-BAN004B;
+  }
+}
+.sn-BAN004C {
+  &:before {
+    content: $sn-BAN004C;
+  }
+}
+.sn-BAN005 {
+  &:before {
+    content: $sn-BAN005;
+  }
+}
+.sn-BAN006 {
+  &:before {
+    content: $sn-BAN006;
+  }
+}
+.sn-BAN007 {
+  &:before {
+    content: $sn-BAN007;
+  }
+}
+.sn-BAN008 {
+  &:before {
+    content: $sn-BAN008;
+  }
+}
+.sn-BAN008B {
+  &:before {
+    content: $sn-BAN008B;
+  }
+}
+.sn-BAN008C {
+  &:before {
+    content: $sn-BAN008C;
+  }
+}
+.sn-BAN009 {
+  &:before {
+    content: $sn-BAN009;
+  }
+}
+.sn-BAN010 {
+  &:before {
+    content: $sn-BAN010;
+  }
+}
+.sn-BAN011 {
+  &:before {
+    content: $sn-BAN011;
+  }
+}
+.sn-BAN012 {
+  &:before {
+    content: $sn-BAN012;
+  }
+}
+.sn-BAN013 {
+  &:before {
+    content: $sn-BAN013;
+  }
+}
+.sn-BAN014 {
+  &:before {
+    content: $sn-BAN014;
+  }
+}
+.sn-BAN015 {
+  &:before {
+    content: $sn-BAN015;
+  }
+}
+.sn-BAN016 {
+  &:before {
+    content: $sn-BAN016;
+  }
+}
+.sn-BAN017 {
+  &:before {
+    content: $sn-BAN017;
+  }
+}
+.sn-BAN019 {
+  &:before {
+    content: $sn-BAN019;
+  }
+}
+.sn-BAN020 {
+  &:before {
+    content: $sn-BAN020;
+  }
+}
+.sn-BAN021 {
+  &:before {
+    content: $sn-BAN021;
+  }
+}
+.sn-BAN023 {
+  &:before {
+    content: $sn-BAN023;
+  }
+}
+.sn-BAN024 {
+  &:before {
+    content: $sn-BAN024;
+  }
+}
+.sn-BAN024B {
+  &:before {
+    content: $sn-BAN024B;
+  }
+}
+.sn-BAN024C {
+  &:before {
+    content: $sn-BAN024C;
+  }
+}
+.sn-BAN026 {
+  &:before {
+    content: $sn-BAN026;
+  }
+}
+.sn-BAN027 {
+  &:before {
+    content: $sn-BAN027;
+  }
+}
+.sn-BAN028 {
+  &:before {
+    content: $sn-BAN028;
+  }
+}
+.sn-BAN029 {
+  &:before {
+    content: $sn-BAN029;
+  }
+}
+.sn-BAN034 {
+  &:before {
+    content: $sn-BAN034;
+  }
+}
+.sn-BAN036 {
+  &:before {
+    content: $sn-BAN036;
+  }
+}
+.sn-BAN037 {
+  &:before {
+    content: $sn-BAN037;
+  }
+}
+.sn-BAN038 {
+  &:before {
+    content: $sn-BAN038;
+  }
+}
+.sn-BAN039 {
+  &:before {
+    content: $sn-BAN039;
+  }
+}
+.sn-BAN040 {
+  &:before {
+    content: $sn-BAN040;
+  }
+}
+.sn-BAN041 {
+  &:before {
+    content: $sn-BAN041;
+  }
+}
+.sn-BAN042 {
+  &:before {
+    content: $sn-BAN042;
+  }
+}
+.sn-BAN042B {
+  &:before {
+    content: $sn-BAN042B;
+  }
+}
+.sn-BAN042C {
+  &:before {
+    content: $sn-BAN042C;
+  }
+}
+.sn-BAN043 {
+  &:before {
+    content: $sn-BAN043;
+  }
+}
+.sn-BAN044 {
+  &:before {
+    content: $sn-BAN044;
+  }
+}
+.sn-BAN045 {
+  &:before {
+    content: $sn-BAN045;
+  }
+}
+.sn-BAN045B {
+  &:before {
+    content: $sn-BAN045B;
+  }
+}
+.sn-BAN045C {
+  &:before {
+    content: $sn-BAN045C;
+  }
+}
+.sn-BAN046 {
+  &:before {
+    content: $sn-BAN046;
+  }
+}
+.sn-BAN046B {
+  &:before {
+    content: $sn-BAN046B;
+  }
+}
+.sn-BAN046C {
+  &:before {
+    content: $sn-BAN046C;
+  }
+}
+.sn-BAN047 {
+  &:before {
+    content: $sn-BAN047;
+  }
+}
+.sn-BAN047B {
+  &:before {
+    content: $sn-BAN047B;
+  }
+}
+.sn-BAN047C {
+  &:before {
+    content: $sn-BAN047C;
+  }
+}
+.sn-BAN048 {
+  &:before {
+    content: $sn-BAN048;
+  }
+}
+.sn-BAN048B {
+  &:before {
+    content: $sn-BAN048B;
+  }
+}
+.sn-BAN048C {
+  &:before {
+    content: $sn-BAN048C;
+  }
+}
+.sn-BAN049 {
+  &:before {
+    content: $sn-BAN049;
+  }
+}
+.sn-BAN050 {
+  &:before {
+    content: $sn-BAN050;
+  }
+}
+.sn-BAN053 {
+  &:before {
+    content: $sn-BAN053;
+  }
+}
+.sn-BAN053B {
+  &:before {
+    content: $sn-BAN053B;
+  }
+}
+.sn-BAN053C {
+  &:before {
+    content: $sn-BAN053C;
+  }
+}
+.sn-BAN054 {
+  &:before {
+    content: $sn-BAN054;
+  }
+}
+.sn-BAN054B {
+  &:before {
+    content: $sn-BAN054B;
+  }
+}
+.sn-BAN054C {
+  &:before {
+    content: $sn-BAN054C;
+  }
+}
+.sn-BAN055 {
+  &:before {
+    content: $sn-BAN055;
+  }
+}
+.sn-BAN055B {
+  &:before {
+    content: $sn-BAN055B;
+  }
+}
+.sn-BAN055C {
+  &:before {
+    content: $sn-BAN055C;
+  }
+}
+.sn-BAN056 {
+  &:before {
+    content: $sn-BAN056;
+  }
+}
+.sn-BAN057 {
+  &:before {
+    content: $sn-BAN057;
+  }
+}
+.sn-BAN057B {
+  &:before {
+    content: $sn-BAN057B;
+  }
+}
+.sn-BAN058 {
+  &:before {
+    content: $sn-BAN058;
+  }
+}
+.sn-BAN059 {
+  &:before {
+    content: $sn-BAN059;
+  }
+}
+.sn-BAN060 {
+  &:before {
+    content: $sn-BAN060;
+  }
+}
+.sn-BAN060B {
+  &:before {
+    content: $sn-BAN060B;
+  }
+}
+.sn-BAN060C {
+  &:before {
+    content: $sn-BAN060C;
+  }
+}
+.sn-BAN061 {
+  &:before {
+    content: $sn-BAN061;
+  }
+}
+.sn-BAN062 {
+  &:before {
+    content: $sn-BAN062;
+  }
+}
+.sn-BAN062B {
+  &:before {
+    content: $sn-BAN062B;
+  }
+}
+.sn-BAN062C {
+  &:before {
+    content: $sn-BAN062C;
+  }
+}
+.sn-BAN063 {
+  &:before {
+    content: $sn-BAN063;
+  }
+}
+.sn-BAN064 {
+  &:before {
+    content: $sn-BAN064;
+  }
+}
+.sn-BAN065 {
+  &:before {
+    content: $sn-BAN065;
+  }
+}
+.sn-BAN066 {
+  &:before {
+    content: $sn-BAN066;
+  }
+}
+.sn-BAN066B {
+  &:before {
+    content: $sn-BAN066B;
+  }
+}
+.sn-BAN066C {
+  &:before {
+    content: $sn-BAN066C;
+  }
+}
+.sn-BAN067 {
+  &:before {
+    content: $sn-BAN067;
+  }
+}
+.sn-BAN068 {
+  &:before {
+    content: $sn-BAN068;
+  }
+}
+.sn-BAN069 {
+  &:before {
+    content: $sn-BAN069;
+  }
+}
+.sn-BAN070 {
+  &:before {
+    content: $sn-BAN070;
+  }
+}
+.sn-BAN071 {
+  &:before {
+    content: $sn-BAN071;
+  }
+}
+.sn-BAN072 {
+  &:before {
+    content: $sn-BAN072;
+  }
+}
+.sn-BAN073 {
+  &:before {
+    content: $sn-BAN073;
+  }
+}
+.sn-BAN074 {
+  &:before {
+    content: $sn-BAN074;
+  }
+}
+.sn-BAN075 {
+  &:before {
+    content: $sn-BAN075;
+  }
+}
+.sn-BAN075B {
+  &:before {
+    content: $sn-BAN075B;
+  }
+}
+.sn-BAN076 {
+  &:before {
+    content: $sn-BAN076;
+  }
+}
+.sn-BAN076B {
+  &:before {
+    content: $sn-BAN076B;
+  }
+}
+.sn-BAN076C {
+  &:before {
+    content: $sn-BAN076C;
+  }
+}
+.sn-BAN077 {
+  &:before {
+    content: $sn-BAN077;
+  }
+}
+.sn-BAN079 {
+  &:before {
+    content: $sn-BAN079;
+  }
+}
+.sn-BAN080 {
+  &:before {
+    content: $sn-BAN080;
+  }
+}
+.sn-BAN081 {
+  &:before {
+    content: $sn-BAN081;
+  }
+}
+.sn-BAN082 {
+  &:before {
+    content: $sn-BAN082;
+  }
+}
+.sn-BAN083 {
+  &:before {
+    content: $sn-BAN083;
+  }
+}
+.sn-BAN086 {
+  &:before {
+    content: $sn-BAN086;
+  }
+}
+.sn-BAN087 {
+  &:before {
+    content: $sn-BAN087;
+  }
+}
+.sn-BAN088 {
+  &:before {
+    content: $sn-BAN088;
+  }
+}
+.sn-BAN089 {
+  &:before {
+    content: $sn-BAN089;
+  }
+}
+.sn-BAN090 {
+  &:before {
+    content: $sn-BAN090;
+  }
+}
+.sn-BAN092 {
+  &:before {
+    content: $sn-BAN092;
+  }
+}
+.sn-BAN093 {
+  &:before {
+    content: $sn-BAN093;
+  }
+}
+.sn-BAN094 {
+  &:before {
+    content: $sn-BAN094;
+  }
+}
+.sn-BAN095 {
+  &:before {
+    content: $sn-BAN095;
+  }
+}
+.sn-BAN096 {
+  &:before {
+    content: $sn-BAN096;
+  }
+}
+.sn-BAN097 {
+  &:before {
+    content: $sn-BAN097;
+  }
+}
+.sn-BAN098 {
+  &:before {
+    content: $sn-BAN098;
+  }
+}
+.sn-CHAN001 {
+  &:before {
+    content: $sn-CHAN001;
+  }
+}
+.sn-CHAN002 {
+  &:before {
+    content: $sn-CHAN002;
+  }
+}
+.sn-CHAN002B {
+  &:before {
+    content: $sn-CHAN002B;
+  }
+}
+.sn-CHAN002C {
+  &:before {
+    content: $sn-CHAN002C;
+  }
+}
+.sn-CHAN003 {
+  &:before {
+    content: $sn-CHAN003;
+  }
+}
+.sn-CHAN004 {
+  &:before {
+    content: $sn-CHAN004;
+  }
+}
+.sn-CHAN005B {
+  &:before {
+    content: $sn-CHAN005B;
+  }
+}
+.sn-CHAN005C {
+  &:before {
+    content: $sn-CHAN005C;
+  }
+}
+.sn-CHAN005D {
+  &:before {
+    content: $sn-CHAN005D;
+  }
+}
+.sn-CHAN006 {
+  &:before {
+    content: $sn-CHAN006;
+  }
+}
+.sn-CHAN007 {
+  &:before {
+    content: $sn-CHAN007;
+  }
+}
+.sn-CHAN008 {
+  &:before {
+    content: $sn-CHAN008;
+  }
+}
+.sn-CHAN010 {
+  &:before {
+    content: $sn-CHAN010;
+  }
+}
+.sn-CHAN011 {
+  &:before {
+    content: $sn-CHAN011;
+  }
+}
+.sn-CHAN012 {
+  &:before {
+    content: $sn-CHAN012;
+  }
+}
+.sn-CHAN013 {
+  &:before {
+    content: $sn-CHAN013;
+  }
+}
+.sn-CHAN014 {
+  &:before {
+    content: $sn-CHAN014;
+  }
+}
+.sn-CHAN015 {
+  &:before {
+    content: $sn-CHAN015;
+  }
+}
+.sn-CHAN016 {
+  &:before {
+    content: $sn-CHAN016;
+  }
+}
+.sn-CHAN017 {
+  &:before {
+    content: $sn-CHAN017;
+  }
+}
+.sn-CHAN018 {
+  &:before {
+    content: $sn-CHAN018;
+  }
+}
+.sn-CHAN019 {
+  &:before {
+    content: $sn-CHAN019;
+  }
+}
+.sn-CHAN020 {
+  &:before {
+    content: $sn-CHAN020;
+  }
+}
+.sn-CHAN021 {
+  &:before {
+    content: $sn-CHAN021;
+  }
+}
+.sn-CHAN022 {
+  &:before {
+    content: $sn-CHAN022;
+  }
+}
+.sn-CHAN023 {
+  &:before {
+    content: $sn-CHAN023;
+  }
+}
+.sn-CHAN024 {
+  &:before {
+    content: $sn-CHAN024;
+  }
+}
+.sn-CHAN025 {
+  &:before {
+    content: $sn-CHAN025;
+  }
+}
+.sn-CHAN026 {
+  &:before {
+    content: $sn-CHAN026;
+  }
+}
+.sn-CHAN027 {
+  &:before {
+    content: $sn-CHAN027;
+  }
+}
+.sn-CHAN028 {
+  &:before {
+    content: $sn-CHAN028;
+  }
+}
+.sn-CHAN029 {
+  &:before {
+    content: $sn-CHAN029;
+  }
+}
+.sn-CHAN030 {
+  &:before {
+    content: $sn-CHAN030;
+  }
+}
+.sn-CHAN031 {
+  &:before {
+    content: $sn-CHAN031;
+  }
+}
+.sn-CHAN032 {
+  &:before {
+    content: $sn-CHAN032;
+  }
+}
+.sn-CHAN033 {
+  &:before {
+    content: $sn-CHAN033;
+  }
+}
+.sn-CHAN034 {
+  &:before {
+    content: $sn-CHAN034;
+  }
+}
+.sn-CHAN035 {
+  &:before {
+    content: $sn-CHAN035;
+  }
+}
+.sn-CHAN036 {
+  &:before {
+    content: $sn-CHAN036;
+  }
+}
+.sn-CHAN038 {
+  &:before {
+    content: $sn-CHAN038;
+  }
+}
+.sn-CHAN040 {
+  &:before {
+    content: $sn-CHAN040;
+  }
+}
+.sn-CHAN041 {
+  &:before {
+    content: $sn-CHAN041;
+  }
+}
+.sn-CHAN042 {
+  &:before {
+    content: $sn-CHAN042;
+  }
+}
+.sn-CHAN043 {
+  &:before {
+    content: $sn-CHAN043;
+  }
+}
+.sn-CHAN044 {
+  &:before {
+    content: $sn-CHAN044;
+  }
+}
+.sn-CHAN045 {
+  &:before {
+    content: $sn-CHAN045;
+  }
+}
+.sn-DOC001 {
+  &:before {
+    content: $sn-DOC001;
+  }
+}
+.sn-DOC002 {
+  &:before {
+    content: $sn-DOC002;
+  }
+}
+.sn-DOC003 {
+  &:before {
+    content: $sn-DOC003;
+  }
+}
+.sn-DOC004 {
+  &:before {
+    content: $sn-DOC004;
+  }
+}
+.sn-DOC005 {
+  &:before {
+    content: $sn-DOC005;
+  }
+}
+.sn-DOC005B {
+  &:before {
+    content: $sn-DOC005B;
+  }
+}
+.sn-DOC005C {
+  &:before {
+    content: $sn-DOC005C;
+  }
+}
+.sn-DOC006 {
+  &:before {
+    content: $sn-DOC006;
+  }
+}
+.sn-DOC006B {
+  &:before {
+    content: $sn-DOC006B;
+  }
+}
+.sn-DOC006C {
+  &:before {
+    content: $sn-DOC006C;
+  }
+}
+.sn-DOC007 {
+  &:before {
+    content: $sn-DOC007;
+  }
+}
+.sn-DOC008 {
+  &:before {
+    content: $sn-DOC008;
+  }
+}
+.sn-DOC008B {
+  &:before {
+    content: $sn-DOC008B;
+  }
+}
+.sn-DOC008C {
+  &:before {
+    content: $sn-DOC008C;
+  }
+}
+.sn-DOC009 {
+  &:before {
+    content: $sn-DOC009;
+  }
+}
+.sn-DOC010 {
+  &:before {
+    content: $sn-DOC010;
+  }
+}
+.sn-DOC010B {
+  &:before {
+    content: $sn-DOC010B;
+  }
+}
+.sn-DOC010C {
+  &:before {
+    content: $sn-DOC010C;
+  }
+}
+.sn-DOC011 {
+  &:before {
+    content: $sn-DOC011;
+  }
+}
+.sn-DOC011B {
+  &:before {
+    content: $sn-DOC011B;
+  }
+}
+.sn-DOC011C {
+  &:before {
+    content: $sn-DOC011C;
+  }
+}
+.sn-DOC012 {
+  &:before {
+    content: $sn-DOC012;
+  }
+}
+.sn-DOC013 {
+  &:before {
+    content: $sn-DOC013;
+  }
+}
+.sn-DOC013B {
+  &:before {
+    content: $sn-DOC013B;
+  }
+}
+.sn-DOC013C {
+  &:before {
+    content: $sn-DOC013C;
+  }
+}
+.sn-FUNC001 {
+  &:before {
+    content: $sn-FUNC001;
+  }
+}
+.sn-FUNC002 {
+  &:before {
+    content: $sn-FUNC002;
+  }
+}
+.sn-FUNC002B {
+  &:before {
+    content: $sn-FUNC002B;
+  }
+}
+.sn-FUNC002C {
+  &:before {
+    content: $sn-FUNC002C;
+  }
+}
+.sn-FUNC003 {
+  &:before {
+    content: $sn-FUNC003;
+  }
+}
+.sn-FUNC004 {
+  &:before {
+    content: $sn-FUNC004;
+  }
+}
+.sn-FUNC005 {
+  &:before {
+    content: $sn-FUNC005;
+  }
+}
+.sn-FUNC006 {
+  &:before {
+    content: $sn-FUNC006;
+  }
+}
+.sn-FUNC007 {
+  &:before {
+    content: $sn-FUNC007;
+  }
+}
+.sn-FUNC008 {
+  &:before {
+    content: $sn-FUNC008;
+  }
+}
+.sn-FUNC009 {
+  &:before {
+    content: $sn-FUNC009;
+  }
+}
+.sn-FUNC010 {
+  &:before {
+    content: $sn-FUNC010;
+  }
+}
+.sn-FUNC100 {
+  &:before {
+    content: $sn-FUNC100;
+  }
+}
+.sn-FUNC101 {
+  &:before {
+    content: $sn-FUNC101;
+  }
+}
+.sn-FUNC102 {
+  &:before {
+    content: $sn-FUNC102;
+  }
+}
+.sn-FUNC103 {
+  &:before {
+    content: $sn-FUNC103;
+  }
+}
+.sn-FUNC104 {
+  &:before {
+    content: $sn-FUNC104;
+  }
+}
+.sn-FUNC105 {
+  &:before {
+    content: $sn-FUNC105;
+  }
+}
+.sn-FUNC106 {
+  &:before {
+    content: $sn-FUNC106;
+  }
+}
+.sn-FUNC107 {
+  &:before {
+    content: $sn-FUNC107;
+  }
+}
+.sn-FUNC108 {
+  &:before {
+    content: $sn-FUNC108;
+  }
+}
+.sn-FUNC109 {
+  &:before {
+    content: $sn-FUNC109;
+  }
+}
+.sn-FUNC011 {
+  &:before {
+    content: $sn-FUNC011;
+  }
+}
+.sn-FUNC110 {
+  &:before {
+    content: $sn-FUNC110;
+  }
+}
+.sn-FUNC111 {
+  &:before {
+    content: $sn-FUNC111;
+  }
+}
+.sn-FUNC112 {
+  &:before {
+    content: $sn-FUNC112;
+  }
+}
+.sn-FUNC113 {
+  &:before {
+    content: $sn-FUNC113;
+  }
+}
+.sn-FUNC114 {
+  &:before {
+    content: $sn-FUNC114;
+  }
+}
+.sn-FUNC115 {
+  &:before {
+    content: $sn-FUNC115;
+  }
+}
+.sn-FUNC115B {
+  &:before {
+    content: $sn-FUNC115B;
+  }
+}
+.sn-FUNC115C {
+  &:before {
+    content: $sn-FUNC115C;
+  }
+}
+.sn-FUNC116 {
+  &:before {
+    content: $sn-FUNC116;
+  }
+}
+.sn-FUNC118 {
+  &:before {
+    content: $sn-FUNC118;
+  }
+}
+.sn-FUNC119 {
+  &:before {
+    content: $sn-FUNC119;
+  }
+}
+.sn-FUNC013 {
+  &:before {
+    content: $sn-FUNC013;
+  }
+}
+.sn-FUNC014 {
+  &:before {
+    content: $sn-FUNC014;
+  }
+}
+.sn-FUNC015 {
+  &:before {
+    content: $sn-FUNC015;
+  }
+}
+.sn-FUNC016 {
+  &:before {
+    content: $sn-FUNC016;
+  }
+}
+.sn-FUNC017 {
+  &:before {
+    content: $sn-FUNC017;
+  }
+}
+.sn-FUNC018 {
+  &:before {
+    content: $sn-FUNC018;
+  }
+}
+.sn-FUNC019 {
+  &:before {
+    content: $sn-FUNC019;
+  }
+}
+.sn-FUNC019B {
+  &:before {
+    content: $sn-FUNC019B;
+  }
+}
+.sn-FUNC019C {
+  &:before {
+    content: $sn-FUNC019C;
+  }
+}
+.sn-FUNC020 {
+  &:before {
+    content: $sn-FUNC020;
+  }
+}
+.sn-FUNC021 {
+  &:before {
+    content: $sn-FUNC021;
+  }
+}
+.sn-FUNC022 {
+  &:before {
+    content: $sn-FUNC022;
+  }
+}
+.sn-FUNC023 {
+  &:before {
+    content: $sn-FUNC023;
+  }
+}
+.sn-FUNC024 {
+  &:before {
+    content: $sn-FUNC024;
+  }
+}
+.sn-FUNC025 {
+  &:before {
+    content: $sn-FUNC025;
+  }
+}
+.sn-FUNC026 {
+  &:before {
+    content: $sn-FUNC026;
+  }
+}
+.sn-FUNC027 {
+  &:before {
+    content: $sn-FUNC027;
+  }
+}
+.sn-FUNC028 {
+  &:before {
+    content: $sn-FUNC028;
+  }
+}
+.sn-FUNC029 {
+  &:before {
+    content: $sn-FUNC029;
+  }
+}
+.sn-FUNC030 {
+  &:before {
+    content: $sn-FUNC030;
+  }
+}
+.sn-FUNC031 {
+  &:before {
+    content: $sn-FUNC031;
+  }
+}
+.sn-FUNC032 {
+  &:before {
+    content: $sn-FUNC032;
+  }
+}
+.sn-FUNC033 {
+  &:before {
+    content: $sn-FUNC033;
+  }
+}
+.sn-FUNC034 {
+  &:before {
+    content: $sn-FUNC034;
+  }
+}
+.sn-FUNC035 {
+  &:before {
+    content: $sn-FUNC035;
+  }
+}
+.sn-FUNC036 {
+  &:before {
+    content: $sn-FUNC036;
+  }
+}
+.sn-FUNC037 {
+  &:before {
+    content: $sn-FUNC037;
+  }
+}
+.sn-FUNC038 {
+  &:before {
+    content: $sn-FUNC038;
+  }
+}
+.sn-FUNC039 {
+  &:before {
+    content: $sn-FUNC039;
+  }
+}
+.sn-FUNC040 {
+  &:before {
+    content: $sn-FUNC040;
+  }
+}
+.sn-FUNC041 {
+  &:before {
+    content: $sn-FUNC041;
+  }
+}
+.sn-FUNC042 {
+  &:before {
+    content: $sn-FUNC042;
+  }
+}
+.sn-FUNC043 {
+  &:before {
+    content: $sn-FUNC043;
+  }
+}
+.sn-FUNC044 {
+  &:before {
+    content: $sn-FUNC044;
+  }
+}
+.sn-FUNC045 {
+  &:before {
+    content: $sn-FUNC045;
+  }
+}
+.sn-FUNC046 {
+  &:before {
+    content: $sn-FUNC046;
+  }
+}
+.sn-FUNC047 {
+  &:before {
+    content: $sn-FUNC047;
+  }
+}
+.sn-FUNC048 {
+  &:before {
+    content: $sn-FUNC048;
+  }
+}
+.sn-FUNC049 {
+  &:before {
+    content: $sn-FUNC049;
+  }
+}
+.sn-FUNC050 {
+  &:before {
+    content: $sn-FUNC050;
+  }
+}
+.sn-FUNC051 {
+  &:before {
+    content: $sn-FUNC051;
+  }
+}
+.sn-FUNC052 {
+  &:before {
+    content: $sn-FUNC052;
+  }
+}
+.sn-FUNC053 {
+  &:before {
+    content: $sn-FUNC053;
+  }
+}
+.sn-FUNC056 {
+  &:before {
+    content: $sn-FUNC056;
+  }
+}
+.sn-FUNC057 {
+  &:before {
+    content: $sn-FUNC057;
+  }
+}
+.sn-FUNC058 {
+  &:before {
+    content: $sn-FUNC058;
+  }
+}
+.sn-FUNC059 {
+  &:before {
+    content: $sn-FUNC059;
+  }
+}
+.sn-FUNC060 {
+  &:before {
+    content: $sn-FUNC060;
+  }
+}
+.sn-FUNC061 {
+  &:before {
+    content: $sn-FUNC061;
+  }
+}
+.sn-FUNC062 {
+  &:before {
+    content: $sn-FUNC062;
+  }
+}
+.sn-FUNC063 {
+  &:before {
+    content: $sn-FUNC063;
+  }
+}
+.sn-FUNC064 {
+  &:before {
+    content: $sn-FUNC064;
+  }
+}
+.sn-FUNC065 {
+  &:before {
+    content: $sn-FUNC065;
+  }
+}
+.sn-FUNC066 {
+  &:before {
+    content: $sn-FUNC066;
+  }
+}
+.sn-FUNC067 {
+  &:before {
+    content: $sn-FUNC067;
+  }
+}
+.sn-FUNC068 {
+  &:before {
+    content: $sn-FUNC068;
+  }
+}
+.sn-FUNC069 {
+  &:before {
+    content: $sn-FUNC069;
+  }
+}
+.sn-FUNC070 {
+  &:before {
+    content: $sn-FUNC070;
+  }
+}
+.sn-FUNC071 {
+  &:before {
+    content: $sn-FUNC071;
+  }
+}
+.sn-FUNC072 {
+  &:before {
+    content: $sn-FUNC072;
+  }
+}
+.sn-FUNC073 {
+  &:before {
+    content: $sn-FUNC073;
+  }
+}
+.sn-FUNC074 {
+  &:before {
+    content: $sn-FUNC074;
+  }
+}
+.sn-FUNC075 {
+  &:before {
+    content: $sn-FUNC075;
+  }
+}
+.sn-FUNC076 {
+  &:before {
+    content: $sn-FUNC076;
+  }
+}
+.sn-FUNC077 {
+  &:before {
+    content: $sn-FUNC077;
+  }
+}
+.sn-FUNC078 {
+  &:before {
+    content: $sn-FUNC078;
+  }
+}
+.sn-FUNC079 {
+  &:before {
+    content: $sn-FUNC079;
+  }
+}
+.sn-FUNC080 {
+  &:before {
+    content: $sn-FUNC080;
+  }
+}
+.sn-FUNC082 {
+  &:before {
+    content: $sn-FUNC082;
+  }
+}
+.sn-FUNC083 {
+  &:before {
+    content: $sn-FUNC083;
+  }
+}
+.sn-FUNC084 {
+  &:before {
+    content: $sn-FUNC084;
+  }
+}
+.sn-FUNC085 {
+  &:before {
+    content: $sn-FUNC085;
+  }
+}
+.sn-FUNC086 {
+  &:before {
+    content: $sn-FUNC086;
+  }
+}
+.sn-FUNC087 {
+  &:before {
+    content: $sn-FUNC087;
+  }
+}
+.sn-FUNC088 {
+  &:before {
+    content: $sn-FUNC088;
+  }
+}
+.sn-FUNC089 {
+  &:before {
+    content: $sn-FUNC089;
+  }
+}
+.sn-FUNC090 {
+  &:before {
+    content: $sn-FUNC090;
+  }
+}
+.sn-FUNC091 {
+  &:before {
+    content: $sn-FUNC091;
+  }
+}
+.sn-FUNC092 {
+  &:before {
+    content: $sn-FUNC092;
+  }
+}
+.sn-FUNC093 {
+  &:before {
+    content: $sn-FUNC093;
+  }
+}
+.sn-FUNC094 {
+  &:before {
+    content: $sn-FUNC094;
+  }
+}
+.sn-FUNC095 {
+  &:before {
+    content: $sn-FUNC095;
+  }
+}
+.sn-FUNC096 {
+  &:before {
+    content: $sn-FUNC096;
+  }
+}
+.sn-FUNC097 {
+  &:before {
+    content: $sn-FUNC097;
+  }
+}
+.sn-FUNC098 {
+  &:before {
+    content: $sn-FUNC098;
+  }
+}
+.sn-FUNC099 {
+  &:before {
+    content: $sn-FUNC099;
+  }
+}
+.sn-SERV001 {
+  &:before {
+    content: $sn-SERV001;
+  }
+}
+.sn-SERV002 {
+  &:before {
+    content: $sn-SERV002;
+  }
+}
+.sn-SERV003 {
+  &:before {
+    content: $sn-SERV003;
+  }
+}
+.sn-SERV004 {
+  &:before {
+    content: $sn-SERV004;
+  }
+}
+.sn-SERV005 {
+  &:before {
+    content: $sn-SERV005;
+  }
+}
+.sn-SERV006 {
+  &:before {
+    content: $sn-SERV006;
+  }
+}
+.sn-SERV007 {
+  &:before {
+    content: $sn-SERV007;
+  }
+}
+.sn-SERV008 {
+  &:before {
+    content: $sn-SERV008;
+  }
+}
+.sn-SERV009 {
+  &:before {
+    content: $sn-SERV009;
+  }
+}
+.sn-SERV010 {
+  &:before {
+    content: $sn-SERV010;
+  }
+}
+.sn-SERV011 {
+  &:before {
+    content: $sn-SERV011;
+  }
+}
+.sn-SERV012 {
+  &:before {
+    content: $sn-SERV012;
+  }
+}
+.sn-SERV013 {
+  &:before {
+    content: $sn-SERV013;
+  }
+}
+.sn-SERV014 {
+  &:before {
+    content: $sn-SERV014;
+  }
+}
+.sn-SERV015 {
+  &:before {
+    content: $sn-SERV015;
+  }
+}
+.sn-SERV016 {
+  &:before {
+    content: $sn-SERV016;
+  }
+}
+.sn-SERV017 {
+  &:before {
+    content: $sn-SERV017;
+  }
+}
+.sn-SERV018 {
+  &:before {
+    content: $sn-SERV018;
+  }
+}
+.sn-SERV019 {
+  &:before {
+    content: $sn-SERV019;
+  }
+}
+.sn-SERV020 {
+  &:before {
+    content: $sn-SERV020;
+  }
+}
+.sn-SERV021 {
+  &:before {
+    content: $sn-SERV021;
+  }
+}
+.sn-SERV022 {
+  &:before {
+    content: $sn-SERV022;
+  }
+}
+.sn-SERV023 {
+  &:before {
+    content: $sn-SERV023;
+  }
+}
+.sn-SERV024 {
+  &:before {
+    content: $sn-SERV024;
+  }
+}
+.sn-SERV025 {
+  &:before {
+    content: $sn-SERV025;
+  }
+}
+.sn-SERV026 {
+  &:before {
+    content: $sn-SERV026;
+  }
+}
+.sn-SERV027 {
+  &:before {
+    content: $sn-SERV027;
+  }
+}
+.sn-SERV028 {
+  &:before {
+    content: $sn-SERV028;
+  }
+}
+.sn-SERV029 {
+  &:before {
+    content: $sn-SERV029;
+  }
+}
+.sn-SERV030 {
+  &:before {
+    content: $sn-SERV030;
+  }
+}
+.sn-SERV031 {
+  &:before {
+    content: $sn-SERV031;
+  }
+}
+.sn-SERV032 {
+  &:before {
+    content: $sn-SERV032;
+  }
+}
+.sn-SERV033 {
+  &:before {
+    content: $sn-SERV033;
+  }
+}
+.sn-SERV034 {
+  &:before {
+    content: $sn-SERV034;
+  }
+}
+.sn-SERV35 {
+  &:before {
+    content: $sn-SERV35;
+  }
+}
+.sn-SERV36 {
+  &:before {
+    content: $sn-SERV36;
+  }
+}
+.sn-SERV037 {
+  &:before {
+    content: $sn-SERV037;
+  }
+}
+.sn-SERV038 {
+  &:before {
+    content: $sn-SERV038;
+  }
+}
+.sn-SERV039 {
+  &:before {
+    content: $sn-SERV039;
+  }
+}
+.sn-SERV040 {
+  &:before {
+    content: $sn-SERV040;
+  }
+}
+.sn-SERV041 {
+  &:before {
+    content: $sn-SERV041;
+  }
+}
+.sn-SERV042 {
+  &:before {
+    content: $sn-SERV042;
+  }
+}
+.sn-SERV043 {
+  &:before {
+    content: $sn-SERV043;
+  }
+}
+.sn-SERV044 {
+  &:before {
+    content: $sn-SERV044;
+  }
+}
+.sn-SERV045 {
+  &:before {
+    content: $sn-SERV045;
+  }
+}
+.sn-SERV046 {
+  &:before {
+    content: $sn-SERV046;
+  }
+}
+.sn-SERV047 {
+  &:before {
+    content: $sn-SERV047;
+  }
+}
+.sn-SERV048 {
+  &:before {
+    content: $sn-SERV048;
+  }
+}
+.sn-SERV049 {
+  &:before {
+    content: $sn-SERV049;
+  }
+}
+.sn-SERV049B {
+  &:before {
+    content: $sn-SERV049B;
+  }
+}
+.sn-SERV050 {
+  &:before {
+    content: $sn-SERV050;
+  }
+}
+.sn-SERV051 {
+  &:before {
+    content: $sn-SERV051;
+  }
+}
+.sn-SERV052 {
+  &:before {
+    content: $sn-SERV052;
+  }
+}
+.sn-SERV053 {
+  &:before {
+    content: $sn-SERV053;
+  }
+}
+.sn-SERV054 {
+  &:before {
+    content: $sn-SERV054;
+  }
+}
+.sn-SERV055 {
+  &:before {
+    content: $sn-SERV055;
+  }
+}
+.sn-SERV056A {
+  &:before {
+    content: $sn-SERV056A;
+  }
+}
+.sn-SMOV001 {
+  &:before {
+    content: $sn-SMOV001;
+  }
+}
+.sn-SMOV002 {
+  &:before {
+    content: $sn-SMOV002;
+  }
+}
+.sn-SMOV003 {
+  &:before {
+    content: $sn-SMOV003;
+  }
+}
+.sn-SMOV004 {
+  &:before {
+    content: $sn-SMOV004;
+  }
+}
+.sn-SMOV005 {
+  &:before {
+    content: $sn-SMOV005;
+  }
+}
+.sn-SMOV006 {
+  &:before {
+    content: $sn-SMOV006;
+  }
+}
+.sn-SMOV007 {
+  &:before {
+    content: $sn-SMOV007;
+  }
+}
+.sn-SMOV008 {
+  &:before {
+    content: $sn-SMOV008;
+  }
+}
+.sn-SMOV009 {
+  &:before {
+    content: $sn-SMOV009;
+  }
+}
+.sn-SMOV010 {
+  &:before {
+    content: $sn-SMOV010;
+  }
+}
+.sn-SMOV011 {
+  &:before {
+    content: $sn-SMOV011;
+  }
+}
+.sn-SMOV012 {
+  &:before {
+    content: $sn-SMOV012;
+  }
+}
+.sn-SMOV013 {
+  &:before {
+    content: $sn-SMOV013;
+  }
+}
+.sn-SYS001 {
+  &:before {
+    content: $sn-SYS001;
+  }
+}
+.sn-SYS002 {
+  &:before {
+    content: $sn-SYS002;
+  }
+}
+.sn-SYS003 {
+  &:before {
+    content: $sn-SYS003;
+  }
+}
+.sn-SYS004 {
+  &:before {
+    content: $sn-SYS004;
+  }
+}
+.sn-SYS005 {
+  &:before {
+    content: $sn-SYS005;
+  }
+}
+.sn-SYS006 {
+  &:before {
+    content: $sn-SYS006;
+  }
+}
+.sn-SYS007 {
+  &:before {
+    content: $sn-SYS007;
+  }
+}
+.sn-SYS008 {
+  &:before {
+    content: $sn-SYS008;
+  }
+}
+.sn-SYS009 {
+  &:before {
+    content: $sn-SYS009;
+  }
+}
+.sn-SYS010 {
+  &:before {
+    content: $sn-SYS010;
+  }
+}
+.sn-SYS011 {
+  &:before {
+    content: $sn-SYS011;
+  }
+}
+.sn-SYS012 {
+  &:before {
+    content: $sn-SYS012;
+  }
+}
+.sn-SYS014 {
+  &:before {
+    content: $sn-SYS014;
+  }
+}
+.sn-SMOV014 {
+  &:before {
+    content: $sn-SMOV014;
+  }
+}
+.sn-SMOV015 {
+  &:before {
+    content: $sn-SMOV015;
+  }
+}
+.sn-SMOV016 {
+  &:before {
+    content: $sn-SMOV016;
+  }
+}
+.sn-SMOV017 {
+  &:before {
+    content: $sn-SMOV017;
+  }
+}
+.sn-SMOV018 {
+  &:before {
+    content: $sn-SMOV018;
+  }
+}
+.sn-SMOV019 {
+  &:before {
+    content: $sn-SMOV019;
+  }
+}
+.sn-SMOV020 {
+  &:before {
+    content: $sn-SMOV020;
+  }
+}
+.sn-SMOV021 {
+  &:before {
+    content: $sn-SMOV021;
+  }
+}
+.sn-SMOV022 {
+  &:before {
+    content: $sn-SMOV022;
+  }
+}
+.sn-SMOV023 {
+  &:before {
+    content: $sn-SMOV023;
+  }
+}
+.sn-SMOV024 {
+  &:before {
+    content: $sn-SMOV024;
+  }
+}
+.sn-SMOV025 {
+  &:before {
+    content: $sn-SMOV025;
+  }
+}
+.sn-SMOV026 {
+  &:before {
+    content: $sn-SMOV026;
+  }
+}
+.sn-SMOV027 {
+  &:before {
+    content: $sn-SMOV027;
+  }
+}
+.sn-SMOV028 {
+  &:before {
+    content: $sn-SMOV028;
+  }
+}
+.sn-SMOV029 {
+  &:before {
+    content: $sn-SMOV029;
+  }
+}
+.sn-SMOV030 {
+  &:before {
+    content: $sn-SMOV030;
+  }
+}
+.sn-SMOV031 {
+  &:before {
+    content: $sn-SMOV031;
+  }
+}
+.sn-SMOV032 {
+  &:before {
+    content: $sn-SMOV032;
+  }
+}
+.sn-SMOV033 {
+  &:before {
+    content: $sn-SMOV033;
+  }
+}
+.sn-SMOV034 {
+  &:before {
+    content: $sn-SMOV034;
+  }
+}
+.sn-SYS015 {
+  &:before {
+    content: $sn-SYS015;
+  }
+}
+.sn-SYS016 {
+  &:before {
+    content: $sn-SYS016;
+  }
+}
+.sn-SYS017 {
+  &:before {
+    content: $sn-SYS017;
+  }
+}
+.sn-SYS018 {
+  &:before {
+    content: $sn-SYS018;
+  }
+}
+.sn-SYS019 {
+  &:before {
+    content: $sn-SYS019;
+  }
+}
+.sn-SYS020 {
+  &:before {
+    content: $sn-SYS020;
+  }
+}
+.sn-SYS021 {
+  &:before {
+    content: $sn-SYS021;
+  }
+}
+.sn-SYS022 {
+  &:before {
+    content: $sn-SYS022;
+  }
+}
+.sn-SYS023 {
+  &:before {
+    content: $sn-SYS023;
+  }
+}
+.sn-SYS024 {
+  &:before {
+    content: $sn-SYS024;
+  }
+}
+.sn-SYS025 {
+  &:before {
+    content: $sn-SYS025;
+  }
+}
+.sn-SYS026 {
+  &:before {
+    content: $sn-SYS026;
+  }
+}
+.sn-SYS027 {
+  &:before {
+    content: $sn-SYS027;
+  }
+}
+.sn-SYS028 {
+  &:before {
+    content: $sn-SYS028;
+  }
+}
+.sn-SYS029 {
+  &:before {
+    content: $sn-SYS029;
+  }
+}
+.sn-SYS030 {
+  &:before {
+    content: $sn-SYS030;
+  }
+}
+.sn-SPEC001 {
+  &:before {
+    content: $sn-SPEC001;
+  }
+}
+.sn-SERV056 {
+  &:before {
+    content: $sn-SERV056;
+  }
+}
+.sn-SERV057 {
+  &:before {
+    content: $sn-SERV057;
+  }
+}
+.sn-SERV059 {
+  &:before {
+    content: $sn-SERV059;
+  }
+}
+.sn-SERV060 {
+  &:before {
+    content: $sn-SERV060;
+  }
+}
+.sn-SERV061 {
+  &:before {
+    content: $sn-SERV061;
+  }
+}
+.sn-SERV062 {
+  &:before {
+    content: $sn-SERV062;
+  }
+}
+.sn-SERV063 {
+  &:before {
+    content: $sn-SERV063;
+  }
+}
+.sn-SERV064 {
+  &:before {
+    content: $sn-SERV064;
+  }
+}
+.sn-SERV065 {
+  &:before {
+    content: $sn-SERV065;
+  }
+}
+.sn-SERV066 {
+  &:before {
+    content: $sn-SERV066;
+  }
+}
+.sn-SERV067 {
+  &:before {
+    content: $sn-SERV067;
+  }
+}
+.sn-SERV068 {
+  &:before {
+    content: $sn-SERV068;
+  }
+}
+.sn-SERV069 {
+  &:before {
+    content: $sn-SERV069;
+  }
+}
+.sn-SERV070 {
+  &:before {
+    content: $sn-SERV070;
+  }
+}
+.sn-SERV071 {
+  &:before {
+    content: $sn-SERV071;
+  }
+}
+.sn-SERV072 {
+  &:before {
+    content: $sn-SERV072;
+  }
+}
+.sn-SERV073 {
+  &:before {
+    content: $sn-SERV073;
+  }
+}
+.sn-SERV074 {
+  &:before {
+    content: $sn-SERV074;
+  }
+}
+.sn-SERV075 {
+  &:before {
+    content: $sn-SERV075;
+  }
+}
+.sn-SERV076 {
+  &:before {
+    content: $sn-SERV076;
+  }
+}
+.sn-SERV077 {
+  &:before {
+    content: $sn-SERV077;
+  }
+}
+.sn-SERV078 {
+  &:before {
+    content: $sn-SERV078;
+  }
+}
+.sn-SERV079 {
+  &:before {
+    content: $sn-SERV079;
+  }
+}
+.sn-SERV080 {
+  &:before {
+    content: $sn-SERV080;
+  }
+}
+.sn-SERV081 {
+  &:before {
+    content: $sn-SERV081;
+  }
+}
+.sn-SERV082 {
+  &:before {
+    content: $sn-SERV082;
+  }
+}
+.sn-SERV083 {
+  &:before {
+    content: $sn-SERV083;
+  }
+}
+.sn-SERV084 {
+  &:before {
+    content: $sn-SERV084;
+  }
+}
+.sn-SERV085 {
+  &:before {
+    content: $sn-SERV085;
+  }
+}
+.sn-SERV086 {
+  &:before {
+    content: $sn-SERV086;
+  }
+}
+.sn-SERV087 {
+  &:before {
+    content: $sn-SERV087;
+  }
+}
+.sn-SERV088 {
+  &:before {
+    content: $sn-SERV088;
+  }
+}
+.sn-SERV089 {
+  &:before {
+    content: $sn-SERV089;
+  }
+}
+.sn-SERV90 {
+  &:before {
+    content: $sn-SERV90;
+  }
+}
+.sn-SERV91 {
+  &:before {
+    content: $sn-SERV91;
+  }
+}
+.sn-SERV92 {
+  &:before {
+    content: $sn-SERV92;
+  }
+}
+.sn-SERV93 {
+  &:before {
+    content: $sn-SERV93;
+  }
+}
+.sn-SERV94 {
+  &:before {
+    content: $sn-SERV94;
+  }
+}
+.sn-SERV95 {
+  &:before {
+    content: $sn-SERV95;
+  }
+}
+.sn-SERV96 {
+  &:before {
+    content: $sn-SERV96;
+  }
+}
+.sn-SERV97 {
+  &:before {
+    content: $sn-SERV97;
+  }
+}
+.sn-SERV98 {
+  &:before {
+    content: $sn-SERV98;
+  }
+}
+.sn-SERV099 {
+  &:before {
+    content: $sn-SERV099;
+  }
+}
+.sn-SERV100 {
+  &:before {
+    content: $sn-SERV100;
+  }
+}
+.sn-SERV100B {
+  &:before {
+    content: $sn-SERV100B;
+  }
+}
+.sn-SERV101 {
+  &:before {
+    content: $sn-SERV101;
+  }
+}
+.sn-SERV101B {
+  &:before {
+    content: $sn-SERV101B;
+  }
+}
+.sn-SERV102 {
+  &:before {
+    content: $sn-SERV102;
+  }
+}
+.sn-SERV103 {
+  &:before {
+    content: $sn-SERV103;
+  }
+}
+.sn-SERV104 {
+  &:before {
+    content: $sn-SERV104;
+  }
+}
+.sn-SERV105 {
+  &:before {
+    content: $sn-SERV105;
+  }
+}
+.sn-SERV106 {
+  &:before {
+    content: $sn-SERV106;
+  }
+}
+.sn-SERV107 {
+  &:before {
+    content: $sn-SERV107;
+  }
+}
+.sn-SERV108 {
+  &:before {
+    content: $sn-SERV108;
+  }
+}
+.sn-SERV109 {
+  &:before {
+    content: $sn-SERV109;
+  }
+}
+.sn-SERV110 {
+  &:before {
+    content: $sn-SERV110;
+  }
+}
+.sn-SERV111 {
+  &:before {
+    content: $sn-SERV111;
+  }
+}
+.sn-SERV112 {
+  &:before {
+    content: $sn-SERV112;
+  }
+}
+.sn-SERV113 {
+  &:before {
+    content: $sn-SERV113;
+  }
+}
+.sn-SERV114 {
+  &:before {
+    content: $sn-SERV114;
+  }
+}
+.sn-SERV115 {
+  &:before {
+    content: $sn-SERV115;
+  }
+}
+.sn-SERV116 {
+  &:before {
+    content: $sn-SERV116;
+  }
+}
+.sn-SERV117 {
+  &:before {
+    content: $sn-SERV117;
+  }
+}
+.sn-SERV118 {
+  &:before {
+    content: $sn-SERV118;
+  }
+}
+.sn-SERV119 {
+  &:before {
+    content: $sn-SERV119;
+  }
+}
+.sn-SERV120 {
+  &:before {
+    content: $sn-SERV120;
+  }
+}
+.sn-SERV121 {
+  &:before {
+    content: $sn-SERV121;
+  }
+}
+.sn-SERV123 {
+  &:before {
+    content: $sn-SERV123;
+  }
+}
+.sn-SERV124 {
+  &:before {
+    content: $sn-SERV124;
+  }
+}
+.sn-SERV125 {
+  &:before {
+    content: $sn-SERV125;
+  }
+}
+.sn-SERV126 {
+  &:before {
+    content: $sn-SERV126;
+  }
+}
+.sn-SERV127 {
+  &:before {
+    content: $sn-SERV127;
+  }
+}
+.sn-SERV128 {
+  &:before {
+    content: $sn-SERV128;
+  }
+}
+.sn-SERV129 {
+  &:before {
+    content: $sn-SERV129;
+  }
+}
+.sn-SERV130 {
+  &:before {
+    content: $sn-SERV130;
+  }
+}
+.sn-SERV131 {
+  &:before {
+    content: $sn-SERV131;
+  }
+}
+.sn-SERV132 {
+  &:before {
+    content: $sn-SERV132;
+  }
+}
+.sn-SERV133 {
+  &:before {
+    content: $sn-SERV133;
+  }
+}
+.sn-SERV134 {
+  &:before {
+    content: $sn-SERV134;
+  }
+}
+.sn-SERV135 {
+  &:before {
+    content: $sn-SERV135;
+  }
+}
+.sn-SERV136 {
+  &:before {
+    content: $sn-SERV136;
+  }
+}
+.sn-SERV137 {
+  &:before {
+    content: $sn-SERV137;
+  }
+}
+.sn-DOC014 {
+  &:before {
+    content: $sn-DOC014;
+  }
+}
+.sn-DOC015 {
+  &:before {
+    content: $sn-DOC015;
+  }
+}
+.sn-DOC016 {
+  &:before {
+    content: $sn-DOC016;
+  }
+}
+.sn-DOC017 {
+  &:before {
+    content: $sn-DOC017;
+  }
+}
+.sn-DOC018 {
+  &:before {
+    content: $sn-DOC018;
+  }
+}
+.sn-DOC019 {
+  &:before {
+    content: $sn-DOC019;
+  }
+}
+.sn-DOC020 {
+  &:before {
+    content: $sn-DOC020;
+  }
+}
+.sn-DOC021 {
+  &:before {
+    content: $sn-DOC021;
+  }
+}
+.sn-DOC022 {
+  &:before {
+    content: $sn-DOC022;
+  }
+}
+.sn-DOC023 {
+  &:before {
+    content: $sn-DOC023;
+  }
+}
+.sn-DOC024 {
+  &:before {
+    content: $sn-DOC024;
+  }
+}
+.sn-DOC025 {
+  &:before {
+    content: $sn-DOC025;
+  }
+}
+.sn-DOC026 {
+  &:before {
+    content: $sn-DOC026;
+  }
+}
+.sn-DOC027 {
+  &:before {
+    content: $sn-DOC027;
+  }
+}
+.sn-CHAN046 {
+  &:before {
+    content: $sn-CHAN046;
+  }
+}
+.sn-CHAN047 {
+  &:before {
+    content: $sn-CHAN047;
+  }
+}
+.sn-CHAN048 {
+  &:before {
+    content: $sn-CHAN048;
+  }
+}
+.sn-CHAN049 {
+  &:before {
+    content: $sn-CHAN049;
+  }
+}
+.sn-CHAN050 {
+  &:before {
+    content: $sn-CHAN050;
+  }
+}
+.sn-CHAN051 {
+  &:before {
+    content: $sn-CHAN051;
+  }
+}
+.sn-CHAN052 {
+  &:before {
+    content: $sn-CHAN052;
+  }
+}
+.sn-CHAN053 {
+  &:before {
+    content: $sn-CHAN053;
+  }
+}
+.sn-CHAN054 {
+  &:before {
+    content: $sn-CHAN054;
+  }
+}
+.sn-CHAN055 {
+  &:before {
+    content: $sn-CHAN055;
+  }
+}
+.sn-CHAN056 {
+  &:before {
+    content: $sn-CHAN056;
+  }
+}
+.sn-CHAN057 {
+  &:before {
+    content: $sn-CHAN057;
+  }
+}
+.sn-CHAN058 {
+  &:before {
+    content: $sn-CHAN058;
+  }
+}
+.sn-CHAN059 {
+  &:before {
+    content: $sn-CHAN059;
+  }
+}
+.sn-CHAN060 {
+  &:before {
+    content: $sn-CHAN060;
+  }
+}
+.sn-CHAN061 {
+  &:before {
+    content: $sn-CHAN061;
+  }
+}
+.sn-CHAN062 {
+  &:before {
+    content: $sn-CHAN062;
+  }
+}
+.sn-CHAN063 {
+  &:before {
+    content: $sn-CHAN063;
+  }
+}
+.sn-CHAN064 {
+  &:before {
+    content: $sn-CHAN064;
+  }
+}
+.sn-CHAN065 {
+  &:before {
+    content: $sn-CHAN065;
+  }
+}
+.sn-CHAN066 {
+  &:before {
+    content: $sn-CHAN066;
+  }
+}
+.sn-CHAN067 {
+  &:before {
+    content: $sn-CHAN067;
+  }
+}
+.sn-CHAN068 {
+  &:before {
+    content: $sn-CHAN068;
+  }
+}
+.sn-CHAN069 {
+  &:before {
+    content: $sn-CHAN069;
+  }
+}
+.sn-BAN099 {
+  &:before {
+    content: $sn-BAN099;
+  }
+}
+.sn-BAN100 {
+  &:before {
+    content: $sn-BAN100;
+  }
+}
+.sn-BAN101 {
+  &:before {
+    content: $sn-BAN101;
+  }
+}
+.sn-BAN102 {
+  &:before {
+    content: $sn-BAN102;
+  }
+}
+.sn-BAN103 {
+  &:before {
+    content: $sn-BAN103;
+  }
+}
+.sn-BAN104 {
+  &:before {
+    content: $sn-BAN104;
+  }
+}
+.sn-BAN104B {
+  &:before {
+    content: $sn-BAN104B;
+  }
+}
+.sn-BAN104C {
+  &:before {
+    content: $sn-BAN104C;
+  }
+}
+.sn-SMOV035 {
+  &:before {
+    content: $sn-SMOV035;
+  }
+}
+.sn-SMOV036 {
+  &:before {
+    content: $sn-SMOV036;
+  }
+}
+.sn-SMOV037 {
+  &:before {
+    content: $sn-SMOV037;
+  }
+}
+.sn-SMOV038 {
+  &:before {
+    content: $sn-SMOV038;
+  }
+}
+.sn-SMOV039 {
+  &:before {
+    content: $sn-SMOV039;
+  }
+}
+.sn-SMOV040 {
+  &:before {
+    content: $sn-SMOV040;
+  }
+}
+.sn-SMOV041 {
+  &:before {
+    content: $sn-SMOV041;
+  }
+}
+.sn-FUNC026B {
+  &:before {
+    content: $sn-FUNC026B;
+  }
+}
+.sn-FUNC080B {
+  &:before {
+    content: $sn-FUNC080B;
+  }
+}
+.sn-FUNC009B {
+  &:before {
+    content: $sn-FUNC009B;
+  }
+}
+.sn-FUNC009C {
+  &:before {
+    content: $sn-FUNC009C;
+  }
+}
+.sn-SEUL001 {
+  &:before {
+    content: $sn-SEUL001;
+  }
+}
+.sn-SEUL002 {
+  &:before {
+    content: $sn-SEUL002;
+  }
+}
+.sn-SEUL003 {
+  &:before {
+    content: $sn-SEUL003;
+  }
+}
+.sn-SEUL004 {
+  &:before {
+    content: $sn-SEUL004;
+  }
+}
+.sn-SEUL005 {
+  &:before {
+    content: $sn-SEUL005;
+  }
+}
+.sn-LOYA001 {
+  &:before {
+    content: $sn-LOYA001;
+  }
+}
+.sn-LOYA002 {
+  &:before {
+    content: $sn-LOYA002;
+  }
+}
+.sn-LOYA003 {
+  &:before {
+    content: $sn-LOYA003;
+  }
+}
+.sn-LOYA004 {
+  &:before {
+    content: $sn-LOYA004;
+  }
+}
+.sn-LOYA005 {
+  &:before {
+    content: $sn-LOYA005;
+  }
+}
+.sn-LOYA006 {
+  &:before {
+    content: $sn-LOYA006;
+  }
+}
+.sn-LOYA007 {
+  &:before {
+    content: $sn-LOYA007;
+  }
+}
+.sn-LOYA008 {
+  &:before {
+    content: $sn-LOYA008;
+  }
+}
+.sn-LOYA009 {
+  &:before {
+    content: $sn-LOYA009;
+  }
+}
+.sn-SEUL006 {
+  &:before {
+    content: $sn-SEUL006;
+  }
+}
+.sn-SEUL007 {
+  &:before {
+    content: $sn-SEUL007;
+  }
+}

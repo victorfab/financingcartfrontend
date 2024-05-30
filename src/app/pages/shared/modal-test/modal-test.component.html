@@ -1,0 +1,28 @@
+<div class="wrapper-overlay" *ngIf="!modalError">
+  <div class="wrapper-error">
+    <div class="wrapper-error-info">
+      <p><a href="/">Cancelar</a></p>
+    </div>
+    <div class="wrapper-error-info">
+      <img src="/assets/images/error-icon.png" alt="Error">
+    </div>
+    <div class="wrapper-error-info">
+      <h3>{{ labelTest }}</h3>
+    </div>
+    <div class="wrapper-error-info">
+      <p>Por el momento no podemos atender tu<br>solicitud. Por favor, inténtalo más tarde.</p>
+    </div>
+    <div class="wrapper-error-info">
+      <p><button type="button" (click)="goToPreviousScreen()">goToPreviousScreen</button></p>
+    </div>
+    <div class="wrapper-error-info">
+      <p><button type="button" (click)="showConnectionError()">showConnectionError</button></p>
+    </div>
+    <div class="wrapper-error-info">
+      <p><button type="button">Super Token</button></p>
+    </div>
+    <div class="wrapper-error-info">
+      <button type="button" (click)="showTransactionTicket()">showTransactionTicket</button>
+    </div>
+  </div>
+</div>

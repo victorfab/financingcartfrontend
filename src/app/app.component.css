@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Santander Headline';
+    src: url('/assets/fonts/santander/SantanderHeadline-Regular.woff');
+}
+@font-face {
+    font-family: 'Santander Text';
+    src: url('/assets/fonts/santander/SantanderText-Regular.woff');
+}
+@font-face {
+    font-family: 'Santander Micro Text';
+    src: url('/assets/fonts/santander/SantanderMicroText.woff');
+}

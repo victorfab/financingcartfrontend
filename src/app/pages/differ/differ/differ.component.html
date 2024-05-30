@@ -1,0 +1,38 @@
+<header>
+    <app-title
+        [lastLocation]="currentLastLocation"
+        [titleName]="currentTitleName"
+        (redirect)="getLocation()"
+    ></app-title>
+</header>
+<main>
+    <section>
+        <app-tap
+        [group24msiChild]="group24msiView"
+        [group24mciChild]="group24mciView"
+        [group18msiChild]="group18msiView"
+        [group18mciChild]="group18mciView"
+        [group12msiChild]="group12msiView"
+        [group12mciChild]="group12mciView"
+        [group9msiChild]="group9msiView"
+        [group9mciChild]="group9mciView"
+        [group6msiChild]="group6msiView"
+        [group6mciChild]="group6mciView"
+        [group3msiChild]="group3msiView"
+        [group3mciChild]="group3mciView"
+        [differedMciChild]="differedMci"
+        [differedMsiChild]="differedMsi"
+        [btnContinueChild]="btnContinue"
+        (radioClick)="getRadioClick($event)"
+        (allClick)="getAllClick($event)"
+        (notAllClick)="getNotAllClick()"
+        (testDiffered)="test()"
+        [counterAvailableChild]="counterAvailable"
+        [counterDisplayChild]="counterDisplay"
+        [generalCounterChild]="generalCounter"
+        ></app-tap>
+    </section>
+</main>
+<footer>
+
+</footer>

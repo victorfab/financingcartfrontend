@@ -1,0 +1,68 @@
+.wrapper-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.wrapper-error {
+  background-color: #fff;
+  /*height: 120vh;*/
+  padding: 0 1.5em 1.5em 1.5em;
+  position: fixed;
+  bottom: 0;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.wrapper-error-info, .wrapper-error-info-icon {
+  text-align: center;
+  position: relative;
+}
+.wrapper-error-info-icon {
+  width: 140px;
+  height: 140px;
+  background-color: #e5e5e5;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+.wrapper-error-info-icon img {
+  margin: 0 auto;
+}
+.wrapper-error-info:first-child {
+  text-align: left !important;
+  padding: 1.1em 0 1.6em 0;
+}
+.wrapper-error-info:first-child p a {
+  color: #ec0000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.wrapper-error-info h3 {
+  font-family: 'Santander Headline', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 1.5em 0 0.5em 0;
+}
+.wrapper-error-info p {
+  color: #191919;
+  font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0.6em 0 1em 0;
+}
+.exclamation-icon {
+  background-color: #ec0000;
+  background-image: url('../../../../assets/images/exclamation-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 32.46px;
+  height: 32.46px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}

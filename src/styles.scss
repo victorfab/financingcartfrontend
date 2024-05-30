@@ -1,0 +1,55 @@
+@import '../node_modules/@ngx-mxflame/atoms/assets/styles/flame';
+@import '@angular/cdk/overlay-prebuilt.css';
+@import '../src/styles.css';
+@include flame-theme();
+@include merge-digital-bank-light();
+@include legacy-santander-font();
+.modal-error{
+  flame-bottom-sheet{
+  .fl-bottom-sheet{
+    &::after {
+      width: 28px;
+      height: 4px;
+      top: 8px;
+      background-color: var(--sn-color__alto);
+      left: calc(50vw - 14px);
+      }
+    }
+    .fl-bottom-sheet-header{
+      margin-top: 12px;
+      .fl-bs-action{
+        .fl-bottom-sheet-close-text{
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 320px) {
+  .sn-slide-button .sn-slide-button-bar {
+    width: 100% !important;
+    background-color: #f2f2f2 !important;
+    height: 56px !important;
+    color: #999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  flame-slide-button {
+    .sn-slide-button.sn-slide-button-bar{
+      &::after{
+        padding-left: 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 414px){
+  flame-slide-button {
+    .sn-slide-button.sn-slide-button-bar{
+      &::after{
+        padding-left: 30px;
+      }
+    }
+  }
+}

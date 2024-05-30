@@ -1,0 +1,84 @@
+[
+    {
+        "id":2175,
+        "nomCom":"BestBuy",
+        "buc":"53H649a035D789032i",
+        "montoCompra":1950,
+        "fechaCompra":"2023-11-27T06:00:00.000+00:00",
+        "fechaModificacion":"2023-11-27T06:00:00.000+00:00",
+        "disponibilidad":2,
+        "ofertas":[
+            {
+                "id":14945,
+                "tipo":"MSI",
+                "descripcion":"Mensualidad a diferir disponible: ",
+                "condicion":3,
+                "noMeses":"9",
+                "estatus":"CAMPAÑA MSI DISPONIBLE"
+            }
+        ]
+    },
+    {
+        "id":2176,
+        "nomCom":"Liverpool",
+        "buc":"53H649a035D789032i",
+        "montoCompra":1900,
+        "fechaCompra":"2023-11-28T06:00:00.000+00:00",
+        "fechaModificacion":"2023-11-28T06:00:00.000+00:00",
+        "disponibilidad":2,
+        "ofertas":[
+            {
+                "id":14950,
+                "tipo":"MCI",
+                "descripcion":"Paga 7.12 pesos de interes mensual por diferir tu compra a 4 meses con un pago total de 1928.5",
+                "condicion":3,
+                "interesMensual":"0.015",
+                "noMeses":"4",
+                "estatus":"CAMPAÑA MCI DISPONIBLE",
+                "totalPago":"1928.5"
+            }
+        ]
+    },
+    {
+        "id":2179,
+        "nomCom":"Sears",
+        "buc":"53H649a035D789032i",
+        "montoCompra":1980,
+        "fechaCompra":"2023-11-29T06:00:00.000+00:00",
+        "fechaModificacion":"2023-11-29T06:00:00.000+00:00",
+        "disponibilidad":2,
+        "ofertas":[
+            {
+                "id":14959,
+                "tipo":"MCI",
+                "descripcion":"Paga 7.42 pesos de interes mensual por diferir tu compra a 4 meses con un pago total de 2009.7",
+                "condicion":3,
+                "interesMensual":"0.015",
+                "noMeses":"4",
+                "estatus":"CAMPAÑA MCI DISPONIBLE",
+                "totalPago":"2009.7"
+            }
+        ]
+    },
+    {
+        "id":2180,
+        "nomCom":"Sanborns",
+        "buc":"53H649a035D789032i",
+        "montoCompra":1960,
+        "fechaCompra":"2023-11-27T06:00:00.000+00:00",
+        "fechaModificacion":"2023-11-27T06:00:00.000+00:00",
+        "disponibilidad":2,
+        "ofertas":[
+            {
+                "id":14962,
+                "tipo":"MCI",
+                "descripcion":"Paga 7.35 pesos de interes mensual por diferir tu compra a 4 meses con un pago total de 1989.4",
+                "condicion":3,
+                "interesMensual":"0.015",
+                "noMeses":"4",
+                "estatus":"CAMPAÑA MCI DISPONIBLE",
+                "totalPago":"1989.4"
+            }
+        ]
+    }
+]

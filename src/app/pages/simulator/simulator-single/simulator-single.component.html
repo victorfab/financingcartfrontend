@@ -1,0 +1,50 @@
+<div class="wrapper-slideshow">
+    <div class="wrapper-slideshow-title">
+        <h3>Selecciona el plazo</h3>
+    </div>
+    <div class="wrapper-slideshow-content">
+        <div class="wrapper-slideshow-slider" *ngIf="monthsWith.length > 0">
+            <div class="wrapper-slideshow-box" *ngFor="let row of monthsWith" (click)="monthBox.emit([row, 0])">
+                <div class="wrapper-slideshow-box-content" [class.selected-box-content]="month == row">
+                    <div class="wrapper-slideshow-month">{{ row }}</div>
+                    <div class="wrapper-slideshow-text">Meses con intereses</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-slideshow-slider" *ngIf="monthsWithout.length > 0">
+            <div class="wrapper-slideshow-box" *ngFor="let row of monthsWithout" (click)="monthBox.emit([row, 0])">
+                <div class="wrapper-slideshow-box-content" [class.selected-box-content]="month == row">
+                    <div class="wrapper-slideshow-month">{{ row }}</div>
+                    <div class="wrapper-slideshow-text">Meses sin intereses</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="simulator-result-wrapper">
+    <div class="simulator-result-content">
+        <div class="simulator-cart-box" *ngFor="let row of selectedPaymentsChild">
+            <div class="simulator-cart-box-title">
+                <h3>{{ row.title }}</h3>
+            </div>
+            <div class="simulator-cart-box-para">
+                <p>Tu compra de <span>{{ row.amount | amountPayment }} MXN</span> se<br>deferirá en <span>{{ row.month }} mensualidades</span> de:</p>
+            </div>
+            <div class="simulator-result-summary">
+                <p><span>{{ paymentTotalMonthChild | amountPayment }} MXN</span>Pago mensual de {{ selectedPaymentsChild.length }} compra</p>
+            </div>
+            <div class="simulator-result-total">
+                <p>Total a pagar: <span>{{ paymentTotalRateChild | amountPayment }} MXN</span></p>
+                <p *ngIf="getTypeChild === 'MCI'">Con interéses e IVA incluido.</p>
+                <p *ngIf="getTypeChild === 'MSI'">Sin interéses.</p>
+            </div>
+        </div>
+        <div class="simulator-result-rate">
+            <p>Tasa de interes anual <span>{{ paymentAnualRateChild }}%</span></p>
+        </div>
+    </div>
+</div>
+<div class="btn-continue">
+    <!--<a routerLink="/products/confirm" (click)="clickConfirm.emit()">Continuar</a>-->
+    <button flameButton type="button" color="primary" (click)="clickConfirm.emit()">Continuar</button>
+</div>

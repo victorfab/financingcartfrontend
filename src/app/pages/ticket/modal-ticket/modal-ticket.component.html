@@ -1,0 +1,89 @@
+<div class="modal" [class.slide]="transitionModal" *ngIf="ticketDataChild">
+    <div class="modal-head">
+        <div class="modal-title">
+            <h3>Comprobante</h3>
+            <a href="/"><img src="/assets/images/close-icon.png" alt="Cerrar"></a>
+        </div>
+        <div class="modal-status">
+            <p>Diferiste {{ ticketDataChild.paymentTotalAmount }} a <br><span>{{ ticketDataChild.month }} meses {{ (paymentAnualRate === 0) ? 'sin' : 'con' }} intereses</span></p>
+        </div>
+        <div class="modal-card">
+            <div class="modal-card-image">
+                <img [src]="cardImage" alt="Tarjeta de Crédito">
+            </div>
+            <div class="modal-card-name">{{storageChild.cardName}}</div>
+            <div class="modal-card-number">TDC {{storageChild.cardNumber}}</div>
+        </div>
+    </div>
+  <div class="modal-details-info" *ngIf="flagCloseInfo">
+    <h4>Recuerda</h4>
+    <p>Podrás consultar el detalle de las<br>mensualidades en tu próximo Estado de<br>Cuenta.</p>
+    <a class="modal-details-info-close" (click)="closeInfo()"></a>
+  </div>
+    <div class="modal-operation">
+        <div class="modal-operation-row">
+            <div class="modal-operation-title">Fecha y hora de operación</div>
+            <div class="modal-operation-data">{{ ticketDataChild.datetime }}</div>
+        </div>
+        <div class="modal-operation-row">
+            <div class="modal-operation-title">Ref. Super Móvil</div>
+            <div class="modal-operation-data">{{ ticketDataChild.invoice }}</div>
+        </div>
+        <div class="modal-operation-row">
+            <div class="modal-operation-title">Tasa de interés anual</div>
+            <div class="modal-operation-data">{{ ticketDataChild.paymentAnualRate }}%</div>
+        </div>
+        <div class="modal-operation-row">
+            <div class="modal-operation-title">Tasa de interés mensual</div>
+            <div class="modal-operation-data">{{ ticketDataChild.paymentMonthRate }}%</div>
+        </div>
+        <div class="modal-operation-row">
+            <div class="modal-operation-title">
+                {{ (paymentAnualRate === 0) ? 'Total a pagar sin intereses' : 'Total a pagar con' }}
+                <br>
+                {{ (paymentAnualRate === 0) ? '' : 'intereses e IVA incluidos' }}
+            </div>
+            <div class="modal-operation-data">{{ ticketDataChild.paymentTotalRate }}</div>
+        </div>
+        <div class="modal-operation-row">
+            <div class="modal-operation-title">
+                {{ (paymentAnualRate === 0) ? 'Pago mensual sin intereses' : 'Pago mensual con' }}
+                <br>
+                {{ (paymentAnualRate === 0) ? '' : 'intereses e IVA incluidos' }}
+            </div>
+            <div class="modal-operation-data">{{ ticketDataChild.paymentTotalMonth }}</div>
+        </div>
+        <div class="modal-operation-row" *ngFor="let payment of ticketDataChild.differedPayments; index as i">
+            <div class="modal-operation-title">Compra {{ i + 1 }}</div>
+            <div class="modal-operation-data">{{ payment['title'] }}</div>
+        </div>
+        <!--<div class="modal-operation-row">
+            <div class="modal-operation-title">
+                {{ ticketDataChild.numPayments }}
+                {{ (ticketDataChild.numPayments === 1) ? 'compra diferida a' : 'compras diferidas a' }}
+            </div>
+            <div class="modal-operation-data">{{ ticketDataChild.month }} {{ (paymentAnualRate === 0) ? 'MSI' : 'MCI' }}</div>
+        </div>-->
+    </div>
+    <div class="modal-details">
+        <!--<div class="modal-details-title">
+            <h5>Mostrar detalles del movimiento</h5>
+        </div>-->
+        <div class="modal-details-actions">
+            <ul>
+                <li>
+                    <span class="detail-action">
+                        <a (click)="shareAndTag(share)"><img src="/assets/images/open-ticket-icon.png" alt="Compartir"></a>
+                    </span>
+                    <span class="detail-title">Comparte el comprobante</span>
+                </li>
+                <!--<li>
+                    <span class="detail-action">
+                        <a (click)="save.emit()"><img src="/assets/images/download-ticket-icon.png" alt="Guardar"></a>
+                    </span>
+                    <span class="detail-title">Guarda el comprobante</span>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+</div>

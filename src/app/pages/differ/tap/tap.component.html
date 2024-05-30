@@ -1,0 +1,388 @@
+<nav>
+    <ul class="tap">
+        <li><a class="tap-link" [class.tap-active]="flagTap" (click)="toDiffer()">Disponibles a diferir</a></li>
+        <li><a class="tap-link" [class.tap-active]="!flagTap" (click)="differed()">Historial de diferidas</a></li>
+    </ul>
+</nav>
+<article *ngIf="flagTap">
+    <div class="pay-content" *ngIf="group24msiChild.length > 0 && counterAvailableChild.twentyFourMsi > 0" [class.pay-display]="!counterDisplayChild.twentyFourMsi">
+        <div class="pay-time">
+            <div class="pay-month">Hasta 24 meses <span>sin</span> intereses*</div>
+            <!--<div class="pay-action" *ngIf="group24msiChild.length > 1">
+                <a *ngIf="generalCounterChild !== counterAvailableChild.twentyFourMsi" class="pay-select-all" (click)="allClick.emit('g24msi')">Seleccionar todas</a>
+                <a *ngIf="generalCounterChild === counterAvailableChild.twentyFourMsi" class="pay-select-all" (click)="notAllClick.emit()">Deseleccionar todas</a>
+            </div>-->
+        </div>
+        <div class="pay-list">
+            <div class="pay-box" [class.rounded]="group24msiChild.length === 1" *ngFor="let row of group24msiChild">
+                <div class="pay-item">
+                    <div class="pay-control">
+                        <div class="radio-btn" [class.radio-active]="row.offer" (click)="radioClick.emit([row.id, 'g24msi'])"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-title">{{ row.title }}</div>
+                        <div class="pay-date">{{ row.date | datePayment }}</div>
+                    </div>
+                </div>
+                <div class="pay-action">
+                    <div class="pay-quantity"><span>- </span>{{ row.amount | amountPayment }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pay-content" *ngIf="group24mciChild.length > 0 && counterAvailableChild.twentyFourMci > 0" [class.pay-display]="!counterDisplayChild.twentyFourMci">
+        <div class="pay-time">
+            <div class="pay-month">Hasta 24 meses <span>con</span> intereses*</div>
+            <!--<div class="pay-action" *ngIf="group24mciChild.length > 1">
+                <a *ngIf="generalCounterChild !== counterAvailableChild.twentyFourMci" class="pay-select-all" (click)="allClick.emit('g24mci')">Seleccionar todas</a>
+                <a *ngIf="generalCounterChild === counterAvailableChild.twentyFourMci" class="pay-select-all" (click)="notAllClick.emit()">Deseleccionar todas</a>
+            </div>-->
+        </div>
+        <div class="pay-legend">Todas la compras que selecciones, se diferirán al mismo plazo y tasa de interés.</div>
+        <div class="pay-list">
+            <div class="pay-box" [class.rounded]="group24mciChild.length === 1" *ngFor="let row of group24mciChild">
+                <div class="pay-item">
+                    <div class="pay-control">
+                        <div class="radio-btn" [class.radio-active]="row.offer" (click)="radioClick.emit([row.id, 'g24mci'])"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-title">{{ row.title }}</div>
+                        <div class="pay-date">{{ row.date | datePayment }}</div>
+                    </div>
+                </div>
+                <div class="pay-action">
+                    <div class="pay-quantity">{{ row.amount | amountPayment }} MXN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pay-content" *ngIf="group18msiChild.length > 0 && counterAvailableChild.eighteenMsi > 0" [class.pay-display]="!counterDisplayChild.eighteenMsi">
+        <div class="pay-time">
+            <div class="pay-month">Hasta 18 meses <span>sin</span> intereses*</div>
+            <!--<div class="pay-action" *ngIf="group18msiChild.length > 1">
+                <a *ngIf="generalCounterChild !== counterAvailableChild.eighteenMsi" class="pay-select-all" (click)="allClick.emit('g18msi')">Seleccionar todas</a>
+                <a *ngIf="generalCounterChild === counterAvailableChild.eighteenMci" class="pay-select-all" (click)="notAllClick.emit()">Deseleccionar todas</a>
+            </div>-->
+        </div>
+        <div class="pay-list">
+            <div class="pay-box" [class.rounded]="group18msiChild.length === 1" *ngFor="let row of group18msiChild">
+                <div class="pay-item">
+                    <div class="pay-control">
+                        <div class="radio-btn" [class.radio-active]="row.offer" (click)="radioClick.emit([row.id, 'g18msi'])"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-title">{{ row.title }}</div>
+                        <div class="pay-date">{{ row.date | datePayment }}</div>
+                    </div>
+                </div>
+                <div class="pay-action">
+                    <div class="pay-quantity"><span>- </span>{{ row.amount | amountPayment }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pay-content" *ngIf="group18mciChild.length > 0 && counterAvailableChild.eighteenMci > 0" [class.pay-display]="!counterDisplayChild.eighteenMci">
+        <div class="pay-time">
+            <div class="pay-month">Hasta 18 meses <span>con</span> intereses*</div>
+            <!--<div class="pay-action" *ngIf="group18mciChild.length > 1">
+                <a *ngIf="generalCounterChild !== counterAvailableChild.eighteenMci" class="pay-select-all" (click)="allClick.emit('g18mci')">Seleccionar todas</a>
+                <a *ngIf="generalCounterChild === counterAvailableChild.eighteenMci" class="pay-select-all" (click)="notAllClick.emit()">Deseleccionar todas</a>
+            </div>-->
+        </div>
+        <div class="pay-list">
+            <div class="pay-box" [class.rounded]="group18mciChild.length === 1" *ngFor="let row of group18mciChild">
+                <div class="pay-item">
+                    <div class="pay-control">
+                        <div class="radio-btn" [class.radio-active]="row.offer" (click)="radioClick.emit([row.id, 'g18mci'])"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-title">{{ row.title }}</div>
+                        <div class="pay-date">{{ row.date | datePayment }}</div>
+                    </div>
+                </div>
+                <div class="pay-action">
+                    <div class="pay-quantity"><span>- </span>{{ row.amount | amountPayment }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pay-content" *ngIf="group12msiChild.length > 0 && counterAvailableChild.twelveMsi > 0" [class.pay-display]="!counterDisplayChild.twelveMsi">
+        <div class="pay-time">
+            <div class="pay-month">Hasta 12 meses <span>sin</span> intereses*</div>
+            <!--<div class="pay-action" *ngIf="group12msiChild.length > 1">
+                <a *ngIf="generalCounterChild !== counterAvailableChild.twelveMsi" class="pay-select-all" (click)="allClick.emit('g12msi')">Seleccionar todas</a>
+                <a *ngIf="generalCounterChild === counterAvailableChild.twelveMsi" class="pay-select-all" (click)="notAllClick.emit()">Deseleccionar todas</a>
+            </div>-->
+        </div>
+        <div class="pay-list">
+            <div class="pay-box" [class.rounded]="group12msiChild.length === 1" *ngFor="let row of group12msiChild">
+                <div class="pay-item">
+                    <div class="pay-control">
+                        <div class="radio-btn" [class.radio-active]="row.offer" (click)="radioClick.emit([row.id, 'g12msi'])"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-title">{{ row.title }}</div>
+                        <div class="pay-date">{{ row.date | datePayment }}</div>
+                    </div>
+                </div>
+                <div class="pay-action">
+                    <div class="pay-quantity"><span>- </span>{{ row.amount | amountPayment }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pay-content" *ngIf="group12mciChild.length > 0 && counterAvailableChild.twelveMci > 0" [class.pay-display]="!counterDisplayChild.twelveMci">
+        <div class="pay-time">
+            <div class="pay-month">Hasta 12 meses <span>con</span> intereses*</div>
+            <!--<div class="pay-action" *ngIf="group12mciChild.length > 1">
+                <a *ngIf="generalCounterChild !== counterAvailableChild.twelveMci" class="pay-select-all" (click)="allClick.emit('g12mci')">Seleccionar todas</a>
+                <a *ngIf="generalCounterChild === counterAvailableChild.twelveMci" class="pay-select-all" (click)="notAllClick.emit()">Deseleccionar todas</a>
+            </div>-->
+        </div>
+        <div class="pay-list">
+            <div class="pay-box" [class.rounded]="group12mciChild.length === 1" *ngFor="let row of group12mciChild">
+                <div class="pay-item">
+                    <div class="pay-control">
+                        <div class="radio-btn" [class.radio-active]="row.offer" (click)="radioClick.emit([row.id, 'g12mci'])"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-title">{{ row.title }}</div>
+                        <div class="pay-date">{{ row.date | datePayment }}</div>
+                    </div>
+                </div>
+                <div class="pay-action">
+                    <div class="pay-quantity"><span>- </span>{{ row.amount | amountPayment }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pay-content" *ngIf="group9msiChild.length > 0 && counterAvailableChild.nineMsi > 0" [class.pay-display]="!counterDisplayChild.nineMsi">
+        <div class="pay-time">
+            <div class="pay-month">Hasta 9 meses <span>sin</span> intereses*</div>
+            <!--<div class="pay-action" *ngIf="group9msiChild.length > 1">
+                <a *ngIf="generalCounterChild !== counterAvailableChild.nineMsi" class="pay-select-all" (click)="allClick.emit('g9msi')">Seleccionar todas</a>
+                <a *ngIf="generalCounterChild === counterAvailableChild.nineMsi" class="pay-select-all" (click)="notAllClick.emit()">Deseleccionar todas</a>
+            </div>-->
+        </div>
+        <div class="pay-list">
+            <div class="pay-box" [class.rounded]="group9msiChild.length === 1" *ngFor="let row of group9msiChild">
+                <div class="pay-item">
+                    <div class="pay-control">
+                        <div class="radio-btn" [class.radio-active]="row.offer" (click)="radioClick.emit([row.id, 'g9msi'])"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-title">{{ row.title }}</div>
+                        <div class="pay-date">{{ row.date | datePayment }}</div>
+                    </div>
+                </div>
+                <div class="pay-action">
+                    <div class="pay-quantity"><span>- </span>{{ row.amount | amountPayment }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pay-content" *ngIf="group9mciChild.length > 0 && counterAvailableChild.nineMci > 0" [class.pay-display]="!counterDisplayChild.nineMci">
+        <div class="pay-time">
+            <div class="pay-month">Hasta 9 meses <span>con</span> intereses*</div>
+            <!--<div class="pay-action" *ngIf="group9mciChild.length > 1">
+                <a *ngIf="generalCounterChild !== counterAvailableChild.nineMci" class="pay-select-all" (click)="allClick.emit('g9mci')">Seleccionar todas</a>
+                <a *ngIf="generalCounterChild === counterAvailableChild.nineMci" class="pay-select-all" (click)="notAllClick.emit()">Deseleccionar todas</a>
+            </div>-->
+        </div>
+        <div class="pay-list">
+            <div class="pay-box" [class.rounded]="group9mciChild.length === 1" *ngFor="let row of group9mciChild">
+                <div class="pay-item">
+                    <div class="pay-control">
+                        <div class="radio-btn" [class.radio-active]="row.offer" (click)="radioClick.emit([row.id, 'g9mci'])"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-title">{{ row.title }}</div>
+                        <div class="pay-date">{{ row.date | datePayment }}</div>
+                    </div>
+                </div>
+                <div class="pay-action">
+                    <div class="pay-quantity"><span>- </span>{{ row.amount | amountPayment }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pay-content" *ngIf="group6msiChild.length > 0 && counterAvailableChild.sixMsi > 0" [class.pay-display]="!counterDisplayChild.sixMsi">
+        <div class="pay-time">
+            <div class="pay-month">Hasta 6 meses <span>sin</span> intereses*</div>
+            <!--<div class="pay-action" *ngIf="group6msiChild.length > 1">
+                <a *ngIf="generalCounterChild !== counterAvailableChild.sixMsi" class="pay-select-all" (click)="allClick.emit('g6msi')">Seleccionar todas</a>
+                <a *ngIf="generalCounterChild === counterAvailableChild.sixMsi" class="pay-select-all" (click)="notAllClick.emit()">Deseleccionar todas</a>
+            </div>-->
+        </div>
+        <div class="pay-list">
+            <div class="pay-box" [class.rounded]="group6msiChild.length === 1" *ngFor="let row of group6msiChild">
+                <div class="pay-item">
+                    <div class="pay-control">
+                        <div class="radio-btn" [class.radio-active]="row.offer" (click)="radioClick.emit([row.id, 'g6msi'])"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-title">{{ row.title }}</div>
+                        <div class="pay-date">{{ row.date | datePayment }}</div>
+                    </div>
+                </div>
+                <div class="pay-action">
+                    <div class="pay-quantity"><span>- </span>{{ row.amount | amountPayment }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pay-content" *ngIf="group6mciChild.length > 0 && counterAvailableChild.sixMci > 0" [class.pay-display]="!counterDisplayChild.sixMci">
+        <div class="pay-time">
+            <div class="pay-month">Hasta 6 meses <span>con</span> intereses*</div>
+            <!--<div class="pay-action" *ngIf="group6mciChild.length > 1">
+                <a *ngIf="generalCounterChild !== counterAvailableChild.sixMci" class="pay-select-all" (click)="allClick.emit('g6mci')">Seleccionar todas</a>
+                <a *ngIf="generalCounterChild === counterAvailableChild.sixMci" class="pay-select-all" (click)="notAllClick.emit()">Deseleccionar todas</a>
+            </div>-->
+        </div>
+        <div class="pay-list">
+            <div class="pay-box" [class.rounded]="group6mciChild.length === 1" *ngFor="let row of group6mciChild">
+                <div class="pay-item">
+                    <div class="pay-control">
+                        <div class="radio-btn" [class.radio-active]="row.offer" (click)="radioClick.emit([row.id, 'g6mci'])"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-title">{{ row.title }}</div>
+                        <div class="pay-date">{{ row.date | datePayment }}</div>
+                    </div>
+                </div>
+                <div class="pay-action">
+                    <div class="pay-quantity"><span>- </span>{{ row.amount | amountPayment }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pay-content" *ngIf="group3msiChild.length > 0 && counterAvailableChild.threeMsi > 0" [class.pay-display]="!counterDisplayChild.threeMsi">
+        <div class="pay-time">
+            <div class="pay-month">Hasta 3 meses <span>sin</span> intereses*</div>
+            <!--<div class="pay-action" *ngIf="group3msiChild.length > 1">
+                <a *ngIf="generalCounterChild !== counterAvailableChild.threeMsi" class="pay-select-all" (click)="allClick.emit('g3msi')">Seleccionar todas</a>
+                <a *ngIf="generalCounterChild === counterAvailableChild.threeMsi" class="pay-select-all" (click)="notAllClick.emit()">Deseleccionar todas</a>
+            </div>-->
+        </div>
+        <div class="pay-list">
+            <div class="pay-box" [class.rounded]="group3msiChild.length === 1" *ngFor="let row of group3msiChild">
+                <div class="pay-item">
+                    <div class="pay-control">
+                        <div class="radio-btn" [class.radio-active]="row.offer" (click)="radioClick.emit([row.id, 'g3msi'])"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-title">{{ row.title }}</div>
+                        <div class="pay-date">{{ row.date | datePayment }}</div>
+                    </div>
+                </div>
+                <div class="pay-action">
+                    <div class="pay-quantity"><span>- </span>{{ row.amount | amountPayment }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pay-content" *ngIf="group3mciChild.length > 0 && counterAvailableChild.threeMci > 0" [class.pay-display]="!counterDisplayChild.threeMci">
+        <div class="pay-time">
+            <div class="pay-month">Hasta 3 meses <span>con</span> intereses*</div>
+            <!--<div class="pay-action" *ngIf="group3mciChild.length > 1">
+                <a *ngIf="generalCounterChild !== counterAvailableChild.threeMci" class="pay-select-all" (click)="allClick.emit('g3mci')">Seleccionar todas</a>
+                <a *ngIf="generalCounterChild === counterAvailableChild.threeMci" class="pay-select-all" (click)="notAllClick.emit()">Deseleccionar todas</a>
+            </div>-->
+        </div>
+        <div class="pay-list">
+            <div class="pay-box" [class.rounded]="group3mciChild.length === 1" *ngFor="let row of group3mciChild">
+                <div class="pay-item">
+                    <div class="pay-control">
+                        <div class="radio-btn" [class.radio-active]="row.offer" (click)="radioClick.emit([row.id, 'g3mci'])"></div>
+                    </div>
+                    <div class="pay-info">
+                        <div class="pay-title">{{ row.title }}</div>
+                        <div class="pay-date">{{ row.date | datePayment }}</div>
+                    </div>
+                </div>
+                <div class="pay-action">
+                    <div class="pay-quantity"><span>- </span>{{ row.amount | amountPayment }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pay-tip" *ngIf="group24mciChild.length > 0 && counterAvailableChild.twentyFourMci > 0">
+        <p>*Las compras participantes para diferir a meses con intereses deben ser superiores a $2,000.00 MXN</p>
+    </div>
+    <div class="btn-continue" *ngIf="group24msiChild.length !== 0 || group24mciChild.length !== 0 || group18msiChild.length !== 0 || group18mciChild.length !== 0 || group12msiChild.length !== 0 || group12mciChild.length !== 0 || group9msiChild.length !== 0 || group9mciChild.length !== 0 || group6msiChild.length !== 0 || group6mciChild.length !== 0 || group3msiChild.length !== 0 || group3mciChild.length !== 0">
+    <!--<div class="btn-continue" *ngIf="group24mciChild.length !== 0">-->
+        <!--<a routerLink="/" (click)="testDiffered.emit()">Continuar</a>-->
+        <!--<a routerLink="/products/simulator" (click)="testDiffered.emit()">Continuar</a>-->
+        <button flameButton type="button" color="primary" *ngIf="!btnContinueChild" (click)="differAndTag()" disabled>Continuar</button>
+        <button flameButton type="button" color="primary" *ngIf="btnContinueChild" (click)="differAndTag()">Continuar</button>
+    </div>
+    <div class="no-payments" *ngIf="group24msiChild.length === 0 && group24mciChild.length === 0 && group18msiChild.length === 0 && group18mciChild.length === 0 && group12msiChild.length === 0 && group12mciChild.length === 0 && group9msiChild.length === 0 && group9mciChild.length === 0 && group6msiChild.length === 0 && group6mciChild.length === 0 && group3msiChild.length === 0 && group3mciChild.length === 0">
+<!--    <div class="no-payments" *ngIf="group24mciChild.length === 0">-->
+        <p>No tiene compras para diferir</p>
+    </div>
+</article>
+<article *ngIf="!flagTap">
+    <div class="pay-content" *ngIf="differedMciChild.length > 0">
+        <div class="pay-time">
+            <div class="pay-month">A meses <span>con</span> intereses</div>
+        </div>
+        <div class="pay-list">
+            <div class="pay-box-differed" [class.rounded]="differedMciChild.length === 1" *ngFor="let row of differedMciChild">
+                <a routerLink="/products/differed/{{ row.offerIdTest }}" (click)="testDiffered.emit()">
+                    <div class="pay-item-differed">
+                        <div class="pay-box-icon">
+                            <div class="pay-icon">
+                                <flame-icon fontIcon="chevron-right"></flame-icon>
+                            </div>
+                        </div>
+                        <div class="pay-info">
+                            <div class="pay-table">
+                                <div class="pay-row">
+                                    <div class="pay-title-differed">{{ row.title }}</div>
+                                    <div class="pay-quantity-differed">{{ row.amount | amountPayment }} MXN</div>
+                                </div>
+                                <div class="pay-row">
+                                    <div class="pay-date-differed">{{ row.date | datePayment }}</div>
+                                    <div class="pay-count-differed">Diferido a meses</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--<div class="pay-content" *ngIf="differedMsiChild.length > 0">
+        <div class="pay-time">
+            <div class="pay-month">A meses <span>sin</span> intereses</div>
+        </div>
+        <div class="pay-list">
+            <div class="pay-box-differed" [class.rounded]="differedMsiChild.length === 1" *ngFor="let row of differedMsiChild">
+                <a routerLink="/products/differed/{{ row.offerIdTest }}" (click)="testDiffered.emit()">
+                    <div class="pay-item-differed dev">
+                        <div class="pay-box-icon">
+                            <div class="pay-icon">
+                                <img src="assets/images/pay-icon.png" alt="Pago">
+                            </div>
+                        </div>
+                        <div class="pay-info">
+                            <div class="pay-table dev">
+                                <div class="pay-row dev">
+                                    <div class="pay-title-differed dev">{{ row.title | lowercase }}</div>
+                                    <div class="pay-quantity-differed dev"><span>- </span>{{ row.amount | amountPayment }} MXN</div>
+                                </div>
+                                <div class="pay-row dev">
+                                    <div class="pay-date-differed dev">{{ row.date | datePayment }}</div>
+                                    <div class="pay-count-differed dev">Diferido a meses</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>-->
+    <div class="no-payments" *ngIf="differedMciChild.length === 0 && differedMsiChild.length === 0">
+        <p>No tienes compras diferidas</p>
+    </div>
+</article>

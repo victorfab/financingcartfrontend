@@ -1,0 +1,12 @@
+<div class="terms">
+    <div class="form">
+        <flame-radio-button type="radio" id="terms" [checked]="inputTermChild" (click)="clickTerms.emit()">Acepto los</flame-radio-button>
+        <span>
+            <span>&nbsp;<a (click)="modal.emit(true)">terminos y condiciones</a></span>
+        </span>
+        <!--<input type="radio" id="terms" [checked]="inputTermChild" (click)="clickTerms.emit()">
+        <span>
+            <label for="terms">Acepto los&nbsp;</label><span><a (click)="modal.emit(true)">terminos y condiciones</a></span>
+        </span>-->
+    </div>
+</div>

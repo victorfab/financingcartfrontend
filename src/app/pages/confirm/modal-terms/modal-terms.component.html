@@ -1,0 +1,20 @@
+<div class="modal" *ngIf="flag" [class.modal-after]="!flagModalChild" [class.modal-info-after]="!flagModalChild">
+    <div class="modal-title">
+        <h3>Terminos y condiciones</h3>
+        <p><a class="close" (click)="modal.emit(false)">Cerrar</a></p>
+    </div>
+    <div class="modal-info">
+        <p>{{ modalTerms }}</p>
+        <!--<p>Lorem ipsum dolor amet cardigan tote bag vegan listicle lyft kitsch, mixtape heirloom taiyaki kickstarter retro lomo. Echo park gentrify chillwave DIY adaptogen bicycle rights helvetica asymmetrical tofu try-hard keffiyeh cred sartorial freegan umami. Literally photo booth edison bulb trust fund quinoa twee pok pok put a bird on it lo-fi poutine. Roof party pop-up DIY pour-over farm-to-table distillery coloring book. Franzen tote bag celiac kitsch tousled chicharrones raclette beard. Banh mi 8-bit man bun typewriter YOLO edison bulb, chillwave fixie venmo keffiyeh.</p>
+        <p>Roof party pop-up DIY pour-over farm-to-table distillery coloring book. Franzen tote bag celiac kitsch tousled chicharrones raclette beard. Banh mi 8-bit man bun typewriter YOLO edison bulb, chillwave fixie venmo keffiyeh.</p>
+        <p>OXO before they sold out edison bulb, helvetica locavore bespoke everyday carry tilde offal paleo. Pok pok williamsburg snackwave beard, etsy craft beer jean shorts. Twee subway tile drinking vinegar raw denim. Mlkshk pork belly shabby chic 8-bit, tousled heirloom street art keffiyeh.</p>
+        <p>Mustache shabby chic asymmetrical listicle offal. Photo booth echo park adaptogen, viral portland mumblecore actually synth poke gentrify air plant ethical asymmetrical. YOLO cornhole roof party, food truck church-key copper mug scenester vaporware succulents sustainable craft beer meh organic la croix. Wolf godard hot chicken austin messenger bag taiyaki pok pok art party leggings hexagon roof party fam man braid semiotics asymmetrical.</p>
+        <p>Asymmetrical put a bird on it meggings heirloom. Adaptogen forage try-hard freegan waistcoat cloud bread craft beer hell of typewriter bitters squid. Messenger bag truffaut crucifix, taiyaki ethical four dollar toast 8-bit paleo helvetica master cleanse neutra. Lo-fi vegan bushwick fingerstache health goth mixtape.</p>-->
+    </div>
+    <div class="modal-terms" *ngIf="flagModalChild">
+        <div class="modal-form">
+            <p>Acepto que he leido y conozco <span>los terminos y condiciones</span> del producto</p>
+            <p><a (click)="modalBtn.emit(false)">La quiero</a></p>
+        </div>
+    </div>
+</div>

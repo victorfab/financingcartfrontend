@@ -1,0 +1,34 @@
+.wrapper-nav-menu {
+    display: flex;
+    justify-content: center;
+    margin: 0 1em;
+    padding: 0;
+}
+.wrapper-nav-menu li {
+    list-style: none;
+    padding: 0 12px;
+    text-align: center;
+    width: 72px;
+}
+.wrapper-nav-menu li a {
+    text-decoration: none;
+    color: #000;
+}
+.wrapper-nav-menu li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-nav-menu li span:first-child {
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 16px;
+    margin: 0 auto;
+}
+.wrapper-nav-menu li span:last-child {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 4px 0;
+}

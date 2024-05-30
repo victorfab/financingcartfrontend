@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="266px" height="168px" viewBox="0 0 266 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>02. Elements / Products / Light / Big - 2. Back</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-3.13197545%" x2="50%" y2="103.608631%" id="linearGradient-1">
+            <stop stop-color="#C4D4D6" offset="0%"></stop>
+            <stop stop-color="#AECCD0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="3.87274093%" y1="50.1642473%" x2="99.4942063%" y2="49.8209127%" id="linearGradient-2">
+            <stop stop-color="#9CC4CB" offset="0%"></stop>
+            <stop stop-color="#8BBCC4" stop-opacity="0.668023383" offset="47.6351351%"></stop>
+            <stop stop-color="#9CC4CB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Tarjetas-Santander" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-641.000000, -4427.000000)">
+            <g id="02.-Elements-/-Products-/-Light-/-Big---2.-Back" transform="translate(641.000000, 4427.000000)">
+                <g>
+                    <rect id="Surface-(base)" fill="url(#linearGradient-1)" x="0" y="0" width="266" height="168" rx="10"></rect>
+                    <path d="M229.096743,109.137561 C228.924822,106.534882 228.238144,103.932711 226.864286,101.677395 L215.186238,81.0316765 C214.327639,79.4700692 213.640459,77.7352885 213.29712,76 L212.78186,76.8678982 C209.862222,81.8990668 209.862222,88.3181616 212.78186,93.3498381 L222.227451,109.83127 C225.147088,114.862947 225.147088,121.282042 222.227451,126.31321 L221.712191,127.181108 C221.368852,125.44582 220.681671,123.711039 219.823073,122.149432 L211.236583,107.055418 L205.740647,97.3399353 C204.882049,95.7783279 204.195371,94.0435473 203.851529,92.3087666 L203.336269,93.1761569 C200.416632,98.2073256 200.416632,104.453247 203.336269,109.658097 L212.78186,126.140037 C215.701498,131.171205 215.701498,137.5903 212.78186,142.621977 L212.267103,143.489367 C211.923261,141.754586 211.236583,140.019806 210.377985,138.458198 L198.527514,117.81248 C196.982237,115.03612 196.295057,111.913413 196.295057,108.790199 C183.758913,112.087095 175,119.199898 175,127.354282 C175,138.805053 191.830142,148 212.609939,148 C233.390239,148 250.220381,138.805053 250.220381,127.354282 C250.391799,119.547261 241.80531,112.433949 229.096743,109.137561" id="Santander-(isotipo)" fill="#8DBAC2" opacity="0.399999976"></path>
+                    <rect id="Barra-magnética" fill-opacity="0.43" fill="url(#linearGradient-2)" style="mix-blend-mode: multiply;" x="0" y="24" width="266" height="16"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

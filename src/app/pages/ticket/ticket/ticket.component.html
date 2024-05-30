@@ -1,0 +1,15 @@
+<header>
+    <div class="wrapper-ticket">
+        <div class="box-ticket">
+            <img src="/assets/images/white-ok-icon.png" alt="¡Compra diferida exitosamente!">
+            <h4>¡{{(ticketData.numPayments > 1) ? 'Compras diferidas' : 'Compra diferida'}} exitosamente!</h4>
+        </div>
+    </div>
+    <app-modal-ticket 
+    [ticketDataChild]="ticketData"
+    [storageChild]="storage"
+    (closeApp)="close()"
+    (save)="saveTicket()"
+    (share)="shareTicket()"
+    ></app-modal-ticket>
+</header>

@@ -1,0 +1,37 @@
+<div class="simulator-result-wrapper">
+    <div class="simulator-result-title">Resumen</div>
+    <div class="simulator-result-content">
+        <!--<div class="simulator-result-summary">
+            <p><span>{{ paymentTotalMonthChild | amountPayment }} MXN</span>Pago mensual de {{ paymentCountChild }} compras:</p>
+        </div>
+        <div class="simulator-result-total">
+            <p>Total a pagar: <span>{{ paymentTotalRateChild | amountPayment }} MXN</span></p>
+            <p *ngIf="getTypeChild === 'MCI'">Con intereses e IVA incluido.</p>
+            <p *ngIf="getTypeChild === 'MSI'">Sin intereses.</p>
+        </div>-->
+        <div class="simulator-result-data">
+            <p class="title">Total a pagar</p>
+            <p class="data">{{ paymentTotalRateChild | amountPayment }} MXN<span>con interés sin IVA.</span></p>
+        </div>
+        <div class="simulator-result-data">
+            <p class="title">Tasa de interés anual</p>
+            <p class="data">{{ paymentAnualRateChild }}%</p>
+        </div>
+        <div class="simulator-result-data">
+            <p class="title">Tasa de interés mensual</p>
+            <p class="data">{{ paymentMonthRateChild }}%</p>
+        </div>
+    </div>
+    <div class="simulator-result-rate">
+        <!--<p>Tasa de interés anual <span>{{ paymentAnualRateChild }}%</span></p>-->
+        <div class="simulator-result-data">
+            <p class="title">Pago mensual</p>
+            <p class="data total">{{ paymentTotalMonthChild | amountPayment }} MXN</p>
+        </div>
+    </div>
+</div>
+<div class="btn-continue">
+    <!--<a routerLink="/products/confirm" (click)="clickConfirm.emit()">Continuar</a>-->
+    <!--<button flameButton type="button" color="primary" routerLink="/products/confirm" (click)="clickConfirm.emit()">Continuar</button>-->
+    <button flameButton type="button" color="primary" (click)="tagAndContinue(clickConfirm)" [disabled]="paymentCountChild === 0">Continuar</button>
+</div>

@@ -1,0 +1,61 @@
+<div class="simulator-modal-overlay" *ngIf="modalFlagChild">
+    <div class="simulator-modal-wrapper">
+        <div class="rectangle"></div>
+        <div class="simulator-card">
+            <div class="simulator-card-main-title">
+                <h4>Confirmar</h4>
+                <p><a class="close" (click)="modal.emit(false)">Cancelar</a></p>
+            </div>
+            <div class="simulator-card-title">
+                <h6>Vas a diferir en tu tarjeta:</h6>
+            </div>
+            <div class="simulator-card-info">
+                <div class="card-image-icon">
+                    <img [src]="cardImage" alt="tarjeta de credito">
+                </div>
+                <div class="card-info">
+                    <h4 class="card-title">{{ storage.cardName }}</h4>
+                    <p class="card-account">TDC {{ storage.cardNumber }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="simulator-summary">
+            <div class="summary-row">
+                <div class="summary-title">Total de {{(paymentCountChild === 1) ? 'una ' + paymentCountChild + ' compra' : 'las ' + paymentCountChild + ' compras' }}</div>
+                <div class="summary-data">{{ paymentTotalAmountChild | amountPayment }} MXN</div>
+            </div>
+            <div class="summary-row">
+                <div class="summary-title">Tasa de interés anual</div>
+                <div class="summary-data">{{ paymentAnualRateChild }}%</div>
+            </div>
+            <div class="summary-row">
+                <div class="summary-title">Tasa de interés mensual</div>
+                <div class="summary-data">{{ paymentMonthRateChild }}%</div>
+            </div>
+            <div class="summary-row">
+                <div class="summary-title">Total a pagar con intereses sin IVA </div>
+                <div class="summary-data">{{ paymentTotalRateChild | amountPayment }} MXN</div>
+            </div>
+            <div class="summary-row">
+                <div class="summary-title">Plazo</div>
+                <div class="summary-data">{{ simulatorMonthChild }} meses</div>
+            </div>
+            <div class="summary-row">
+                <div class="summary-title" *ngIf="getTypeChild === 'MCI'">Pago mensual con intereses sin IVA</div>
+                <div class="summary-title" *ngIf="getTypeChild === 'MSI'">Pago mensual sin intereses</div>
+                <div class="summary-data">{{ paymentTotalMonthChild | amountPayment  }} MXN</div>
+            </div>
+        </div>
+        <app-summary-term (modal)="showModal($event)" (clickTerms)="acceptedTerms()" [inputTermChild]="inputTerm"></app-summary-term>
+        <app-summary-switch (switchBtn)="confirmDiffer()" [inputSwitchChild]="inputSwitch"></app-summary-switch>
+    </div>
+</div>
+<div>
+    <app-modal-terms
+        [flag]="flagModal"
+        [flagModalChild]="flagModalParent"
+        [modalTerms]="terms"
+        (modal)="closeModal($event)"
+        (modalBtn)="acceptedTermsModal($event)">
+    </app-modal-terms>
+</div>

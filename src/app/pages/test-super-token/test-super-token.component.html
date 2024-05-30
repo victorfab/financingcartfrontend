@@ -1,0 +1,14 @@
+<h1>Prueba de Super Token</h1>
+<div class="btn-callback">
+  <button flameButton color="primary" (click)="openToken()">Test Token</button>
+</div>
+<div *ngIf="response">Datos de Salida: </div>
+<pre *ngIf="response">{{ response }}</pre>
+
+<div class="btn-callback">
+  <button flameButton color="primary" (click)="showTicket()">Show Ticket</button>
+</div>
+
+<div class="btn-callback">
+  <button flameButton color="primary" (click)="backToSM()">Back to SM</button>
+</div>

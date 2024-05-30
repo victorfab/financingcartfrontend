@@ -1,0 +1,64 @@
+<header>
+    <app-title [lastLocation]="currentLastLocation" [titleName]="currentTitleName"></app-title>
+</header>
+<main>
+    <!--<section *ngIf="selectedPayments.length > 1">-->
+    <section>
+        <app-simulator-slideshow 
+        [monthsWith]="simulatorMonthsWith"
+        [monthsWithout]="simulatorMonthsWithout"
+        [month]="simulatorMonth"
+        (monthBox)="monthSwitch($event)"
+        ></app-simulator-slideshow>
+    </section>
+    <!--<section *ngIf="selectedPayments.length > 1">-->
+    <section>
+        <app-simulator-cart 
+        [selectedPaymentsChild]="selectedPayments"
+        [mDetailsChild]="mDetails"
+        [paymentCountChild]="paymentCount"
+        (deletePayment)="clickDeletePayment($event)"
+        (moreDetails)="clickMoreDetails()"
+        (radioClick)="updatePaymentsChoice($event)"
+        ></app-simulator-cart>
+        <app-simulator-result
+        [getTypeChild]="getType"
+        [paymentCountChild]="paymentCount"
+        [paymentTotalMonthChild]="paymentTotalMonth"
+        [paymentTotalRateChild]="paymentTotalRate"
+        [paymentAnualRateChild]="paymentAnualRate"
+        [paymentMonthRateChild]="paymentMonthRate"
+        (clickConfirm)="performConfirm()"
+        ></app-simulator-result>
+    </section>
+    <!--<section *ngIf="selectedPayments.length === 1">
+        <app-simulator-single
+        [getTypeChild]="getType"
+        [selectedPaymentsChild]="selectedPayments"
+        [monthsWith]="simulatorMonthsWith"
+        [monthsWithout]="simulatorMonthsWithout"
+        [month]="simulatorMonth"
+        (monthBox)="monthSwitch($event)"
+        [paymentCountChild]="paymentCount"
+        [paymentTotalMonthChild]="paymentTotalMonth"
+        [paymentTotalRateChild]="paymentTotalRate"
+        [paymentAnualRateChild]="paymentAnualRate"
+        (clickConfirm)="performConfirm()"
+        ></app-simulator-single>
+    </section>-->
+</main>
+<footer>
+    <app-simulator-modal
+        [paymentCountChild]="paymentCount"
+        [selectedPaymentsChild]="selectedPayments"
+        [simulatorMonthChild]="simulatorMonth"
+        [paymentTotalMonthChild]="paymentTotalMonth"
+        [paymentTotalRateChild]="paymentTotalRate"
+        [paymentTotalAmountChild]="paymentTotalAmount"
+        [paymentAnualRateChild]="paymentAnualRate"
+        [paymentMonthRateChild]="paymentMonthRate"
+        [getTypeChild]="getType"
+        [modalFlagChild]="modalFlag"
+        (modal)="closeModal($event)" 
+    ></app-simulator-modal>
+</footer>

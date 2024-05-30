@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="30px" viewBox="0 0 48 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Product@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="V-1.0.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PagoImpuestos_EstadoCero_V1.0.0_000" transform="translate(-384.000000, -237.000000)">
+            <g id="Frecuentes" transform="translate(264.000000, 171.000000)">
+                <g id="Impuesto-1" transform="translate(104.000000, 48.000000)">
+                    <g id="Product" transform="translate(16.000000, 18.000000)">
+                        <rect id="surface" fill="#263575" x="0" y="0" width="48" height="30" rx="0.360902256"></rect>
+                        <text id="SAT" font-family="SantanderText-Bold, Santander Text" font-size="7" font-weight="bold" fill="#FFFFFF">
+                            <tspan x="18.2635" y="18">SAT</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

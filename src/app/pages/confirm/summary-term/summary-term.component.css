@@ -1,0 +1,34 @@
+.terms {
+    margin: 10em 1em 0;
+}
+.form {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+}
+.form span {
+    display: flex;
+    align-items: center;
+}
+.form span a {
+    color: #ed0000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.condition {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-color:#FFCC33;
+    border-radius: 12px;
+    color: #191919;
+    padding: 1em 1em;
+    margin-top: 1em;
+}
+.condition p {
+    margin: 0;
+}
+.condition span {
+    font-weight: 700;
+}

@@ -1,0 +1,52 @@
+<div class="simulator-cart-content">
+    <!--<div class="simulator-cart-box" *ngFor="let row of selectedPaymentsChild">
+        <div class="simulator-cart-box-title">
+            <h3>{{ row.title }}</h3>
+        </div>
+        <div class="simulator-cart-box-para">
+            <p>Tu compra de <span>{{ row.amount | amountPayment }} MXN</span> se<br>deferirá en <span>{{ row.month }} mensualidades</span> de:</p>
+        </div>
+        <div class="simulator-cart-box-month" *ngIf="row.type === 'MCI'">
+            <p><span>{{ (row.total / row.month) | amountPayment }} MXN</span>Con intereses e IVA incluido.</p>
+        </div>
+        <div class="simulator-cart-box-month" *ngIf="row.type === 'MSI'">
+            <p><span>{{ (row.amount / row.month) | amountPayment }} MXN</span>Sin intereses.</p>
+        </div>
+        <div class="simulator-cart-box-info" *ngIf="row.type === 'MCI'">
+            <p class="simulator-cart-box-subtotal">Pago mensual: <span>{{ (row.total / row.month) | amountPayment }} MXN</span></p>
+            <p class="simulator-cart-box-total">Total a pagar: <span>{{ row.total | amountPayment }} MXN</span></p>
+        </div>
+        <div class="simulator-cart-box-info" *ngIf="row.type === 'MSI'">
+            <p class="simulator-cart-box-subtotal">Pago mensual: <span>{{ (row.amount / row.month) | amountPayment }} MXN</span></p>
+            <p class="simulator-cart-box-total">Total a pagar: <span>{{ row.amount | amountPayment }} MXN</span></p>
+        </div>
+        <div class="simulator-cart-box-delete" (click)="deletePayment.emit(row.id)"></div>
+    </div>-->
+    <div class="simulator-cart-summary">
+        <div class="simulator-cart-count">({{ paymentCountChild }}) Compras a diferir</div>
+        <div class="simulator-cart-legend">Pagos con intereses sin IVA.</div>
+        <div class="simulator-cart-details" (click)="moreDetails.emit()">{{ !mDetailsChild ? 'Más' : 'Menos' }} detalle</div>
+    </div>
+    <div class="simulator-cart-list">
+        <div class="simulator-cart-payment" *ngFor="let row of selectedPaymentsChild">
+            <div class="simulator-cart-payment-content">
+                <div class="simulator-cart-payment-radio" [class.simulator-cart-payment-radio-active]="row.offer" (click)="radioClick.emit([row.id, row.offer])"></div>
+                <div class="simulator-cart-payment-title">{{ row.title }}</div>
+            </div>
+            <div class="simulator-cart-payment-month">
+                <p class="payment-month">Pago mensual:</p>
+                <p class="payment-amount">{{ (row.total / row.month) | amountPayment }} MXN</p>
+            </div>
+            <div class="simulator-cart-payment-more" *ngIf="mDetailsChild">
+                <div class="simulator-cart-payment-box">
+                    <p class="payment">Compra:</p>
+                    <p class="payment-quantity">{{ row.amount | amountPayment }} MXN</p>
+                </div>
+                <div class="simulator-cart-payment-box">
+                    <p class="payment">Total a pagar:</p>
+                    <p class="payment-quantity">{{ row.total | amountPayment }} MXN</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

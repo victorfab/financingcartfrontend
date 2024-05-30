@@ -1,0 +1,230 @@
+nav {
+    padding: 0.2em 1em;
+}
+.tap {
+    background-color: #e5e5e5;
+    border-radius: 12px;
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 4px;
+}
+.tap li {
+    width: 50%;
+}
+.tap-link {
+    text-decoration: none;
+    color: #4c4c4c;
+    padding: 5px 0;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.tap-active {
+  color: #191919;
+  text-align: center;
+  font-family: 'SantanderText', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+.pay-content {
+    padding: 1em 1em;
+}
+.pay-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pay-month {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.pay-legend {
+    color: #595959;
+    font-size: 10px;
+    font-family: 'Santander Micro Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0.5em 0;
+}
+.pay-month span {
+    color: #ec0000;
+}
+.pay-select-all {
+    font-family: 'Santander Micro Text', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ec0000;
+}
+.pay-list {
+    margin-top: 0.6em;
+}
+.pay-box {
+    padding: 1.2em 1.1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pay-box, .pay-box-differed {
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+}
+.pay-box:first-child, .pay-box-differed:first-child {
+    border-radius: 12px 12px 0 0;
+}
+.pay-box:last-child, .pay-box-differed:last-child {
+    border-radius: 0 0 12px 12px;
+    border-bottom: none;
+}
+.rounded {
+    border-radius: 12px 12px !important;
+}
+.pay-item {
+    display: flex;
+    align-items: center;
+}
+.pay-item-differed {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+}
+.pay-icon {
+    width: 48px;
+    height: 48px;
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: var(--sn-color__dusty, #999);
+}
+.pay-control {
+    margin-right: 0.8em;
+}
+.pay-control .radio-btn {
+    width: 22px;
+    height: 22px;
+    background-color: #d2e7d4;
+    border: 1px solid #63B468;
+    border-radius: 15px 15px;
+    background-image: none;
+}
+.pay-control .radio-active {
+    background-color: #63b468;
+    background-image: url('../../../../assets/images/check-icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #63b468;
+}
+.pay-title, .pay-quantity, .pay-box-differed a {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.pay-quantity {
+    letter-spacing: 0.70px;
+}
+.pay-quantity-differed, .pay-box-differed a {
+    font-size: 14px;
+}
+.pay-title-differed {
+    font-size: 16px;
+}
+.pay-date, .pay-date-differed {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.pay-quantity span, .pay-count {
+    color: #ec0000;
+}
+.pay-quantity-differed span, .pay-count-differed {
+    color: #ec0000;
+    font-size: 14px;
+}
+.pay-title::first-letter, .pay-count::first-letter,
+.pay-title-differed::first-letter, .pay-count-differed::first-letter {
+    text-transform:capitalize;
+}
+.pay-box-differed a {
+    text-decoration: none;
+    padding: 1.2em 1.1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+}
+.pay-action {
+    text-align: right;
+}
+.btn-continue {
+    margin: 2.5em 0 1.3em 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+.btn-continue a {
+    width: 140px;
+    color: #fff;
+    background-color: #EC0000;
+    border: none;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 1em 0;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.no-payments p {
+    margin: 0;
+    padding: 3.2em 0;
+    text-align: center;
+    font-family: 'Santander Micro Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.pay-display {
+    display: none;
+}
+.pay-box-icon {
+    width: auto;
+}
+.pay-info {
+    width: 100%;
+}
+.pay-tip {
+    color: #595959;
+    font-size: 10px;
+    font-family: 'Santander Micro Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.pay-tip p {
+    margin: 0 1.5em;
+}
+
+@media (min-width: 375px) {
+    .pay-row {
+        display: flex;
+    }
+    .pay-title-differed, .pay-date-differed,
+    .pay-quantity-differed, .pay-count-differed {
+        width: 50%;
+    }
+    .pay-quantity-differed, .pay-count-differed {
+        text-align: right;
+    }
+}

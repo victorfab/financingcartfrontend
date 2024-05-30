@@ -1,0 +1,185 @@
+.modal {
+    background-color: #fff;
+    background-image: url('/assets/images/logo-mini-icon.png');
+    background-repeat: no-repeat;
+    background-position: 1.7em 1.8em;
+    border-radius: 16px 16px 0 0;
+    position: absolute;
+    top: 0;
+    padding: 1.5em 0;
+    width: 100%;
+    transition: top 2s;
+}
+.slide {
+    top: 60px;
+}
+.modal-title {
+    position: relative;
+}
+.modal-title a {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    cursor: pointer;
+}
+.modal-head {
+    text-align: center;
+    padding: 0 1.5em;
+}
+.modal-head h3 {
+    font-family: 'Santander Headline', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #191919;
+    padding-bottom: 0.9em;
+    margin: 0 0 0 1em;
+}
+.modal-status p {
+  color:#4C4C4C;
+  text-align: center;
+  /* 📱 Mobile/Body/Body */
+  font-family: 'SantanderText', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+.modal-status span {
+  color: #4C4C4C;
+  font-family: 'SantanderText', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.modal-card {
+    padding-bottom: 0;
+}
+.modal-card-image {
+    margin: 1em auto 0.5em;
+    width: 64px;
+    height: 64px;
+}
+.modal-card-image img {
+    margin-top: 0.5em;
+    width: 30px;
+}
+.modal-card-name {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #191919;
+}
+.modal-card-number {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #595959;
+}
+.modal-operation {
+    padding: 0.6em 1.5em;
+    border-top: none;
+    border-bottom: 2px dashed #D9D9D9;
+}
+.modal-operation-row {
+    width: 100%;
+    display: flex;
+}
+.modal-operation-title, .modal-operation-data {
+    width: 50%;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 1.2em 0;
+    color: #000;
+}
+.modal-operation-data {
+    text-align: right;
+}
+.modal-details-title {
+    padding: 1.6em 0;
+}
+.modal-details-title h5 {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ed0000;
+    text-align: center;
+    margin: 0;
+}
+.modal-details-actions ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.modal-details-actions ul li {
+    width: 100%;
+    list-style: none;
+    display: inline-block;
+    padding: 0.8em 0 0.5em 0;
+}
+.detail-title {
+    display: block;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #191919;
+    width: 86px;
+    height: 42px;
+    text-align: center;
+    padding: 4px 0;
+}
+.detail-action,
+.detail-title {
+    margin: 0 auto;
+}
+.detail-action,
+.detail-action a {
+    background-color: #F2F2F2;
+    border-radius: 12px;
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+.detail-action a img {
+    margin: 35% 35%;
+}
+.modal-details-info {
+    background-color: #ccd6fa;
+    border-top: 1px solid #0032e6;
+    border-bottom: 1px solid #0032e6;
+    padding: 1em 1em 1em 3.6em;
+    background-image: url('../../../../assets/images/info-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 1em 1em;
+    position: relative;
+    margin: 1.4em 0 0 0;
+}
+.modal-details-info h4 {
+  color: #191919;
+  font-family: 'SantanderText', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  margin: 0 0 0.2em 0;
+}
+.modal-details-info p {
+    color: #191919;
+    font-size: 14px;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+.modal-details-info-close {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../../../../assets/images/info-close-icon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em 1em 0 0;
+    cursor: pointer;
+}

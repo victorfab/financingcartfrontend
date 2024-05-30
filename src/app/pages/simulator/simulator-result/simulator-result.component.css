@@ -1,0 +1,116 @@
+.simulator-result-wrapper {
+    padding: 0 1em;
+}
+.simulator-result-content {
+    padding: 0.5em 1em;
+    border-radius: 12px 12px 0 0;
+    background-color: #fff;
+}
+.simulator-result-rate {
+    background-color: #d2e7d4;
+    color: #fff !important;
+    border-radius: 0 0 12px 12px;
+    padding: 0 1em;
+}
+.simulator-result-rate p {
+    margin: 0;
+    padding: 0.5em;
+    font-family: 'Santander Micro Text', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+.simulator-result-rate p span {
+    font-weight: 700;
+}
+.simulator-result-total {
+    margin-top: 0.8em;
+}
+.simulator-result-summary p,
+.simulator-result-total p {
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+.simulator-result-summary p,
+.simulator-result-total p span {
+    font-size: 16px;
+}
+.simulator-result-total p {
+    font-size: 14px;
+}
+.simulator-result-total p span {
+    font-weight: 700;
+}
+.simulator-result-summary p span {
+    font-family: 'Santander Headline', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    display: block;
+}
+.simulator-result-summary p span {
+    font-size: 28px;
+}
+.btn-continue {
+    margin: 2.5em 0 1.3em 0;
+    text-align: center;
+}
+.btn-continue a {
+    width: 140px;
+    color: #fff;
+    background-color: #EC0000;
+    border: none;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 1em 0;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.simulator-result-title {
+    color: #191919;
+    font-size: 16px;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+}
+.simulator-result-data {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5em 0;
+}
+.simulator-result-data p {
+    margin: 0;
+}
+.simulator-result-data p.title {
+    color: #000;
+    font-size: 12px;
+    font-family: 'Santander Micro Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    width: 60%;
+}
+.simulator-result-data p.data {
+    color: #000;
+    font-size: 14px;
+    font-family: 'Santander Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    width: 40%;
+    text-align: right;
+}
+.simulator-result-data p.total {
+    font-weight: 700 !important;
+    font-family: "SantanderText", sans-serif;
+}
+.simulator-result-data p span {
+    color: #000;
+    font-size: 10px;
+    font-family: 'Santander Micro Text', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    display: block;
+}
+.simulator-result-data p {
+    padding: 0;
+}

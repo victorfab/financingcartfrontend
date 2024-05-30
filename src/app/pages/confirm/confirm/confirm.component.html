@@ -1,0 +1,24 @@
+<header>
+    <app-title [lastLocation]="currentLastLocation" [titleName]="currentTitleName"></app-title>
+</header>
+<main>
+    <section>
+        <app-summary-card></app-summary-card>
+    </section>
+    <section>
+        <app-summary-differ [title]="" [data]="differ"></app-summary-differ>
+    </section>
+    <section>
+        <app-summary-term (modal)="showModal($event)" (clickTerms)="acceptedTerms()" [inputTermChild]="inputTerm"></app-summary-term>
+        <app-summary-switch (switchBtn)="confirmDiffer()" [inputSwitchChild]="inputSwitch"></app-summary-switch>
+    </section>
+</main>
+<footer>
+    <app-modal-terms
+        [flag]="flagModal"
+        [flagModalChild]="flagModalParent"
+        [modalTerms]="terms"
+        (modal)="closeModal($event)"
+        (modalBtn)="acceptedTermsModal($event)">
+    </app-modal-terms>
+</footer>

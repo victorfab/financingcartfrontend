@@ -1,0 +1,8 @@
+<h1 class="title">
+    <span class="back-btn">
+        <a routerLink="{{ lastLocation }}" (click)="lastLocation === '/' ? redirect.emit() : false">
+            <img src="/assets/images/arrow-back-icon.png" alt="Atras">
+        </a>
+    </span>
+    <span>{{ titleName }}</span>
+</h1>
